@@ -49,8 +49,9 @@
 			span,
 			a {
 				display: block;
-				padding: 0.25rem 1.5rem;
+				padding: 0.4rem 1.5rem;
 				color: initial;
+				text-transform: uppercase;
 				&:hover {
 					text-decoration: none;
 				}
