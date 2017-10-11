@@ -9,29 +9,11 @@ body {
 }
 
 h1 {
+    margin-bottom: 16px;
     font-family: "Didot", "sans-serif", Serif;
 }
 
-h2,
-ul {
+h2 {
     font-weight: normal;
-    color: #757575;
-}
-
-ul {
-    margin-top: 50px;
-    padding: 0;
-    list-style: none;
-    li {
-        margin: 24px 0;
-        span {
-            &:hover {
-                cursor: pointer;
-            }
-        }
-    }
-}
-
-a {
     color: #757575;
 }

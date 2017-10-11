@@ -1,11 +1,15 @@
 <template>
-	<div class="wrapper">
+	<div class="wrapper d-flex justify-content-center align-items-center">
 		<div class="content">
 			<h1>Yiliyaer Maimaitijiang</h1>
 			<h2>Web Development & Design</h2>
 			<ul>
-				<li><span>Projects</span></li>
-				<li><span>Designs</span></li>
+				<li>
+					<router-link :to="{ name: 'Projects' }" tag="span">Projects</router-link>
+				</li>
+				<li>
+					<router-link :to="{ name: 'Designs' }" tag="span">Designs</router-link>
+				</li>
 				<li><a href="https://github.com/eliyar" target="_blank">GitHub</a></li>
 				<li><a href="https://linkedin.com/in/eliyar-m" target="_blank">LinkedIn</a></li>
 			</ul>
@@ -13,7 +17,6 @@
 	</div>
 </template>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 	.wrapper {
 		width: calc(100vw - 32px);
@@ -24,12 +27,28 @@
 	}
 	
 	.content {
-		width: 450px;
-		margin-top: calc(-350px / 2);
-		margin-left: calc(-450px / 2);
-		position: absolute;
-		top: 50%;
-		left: 50%;
 		text-transform: uppercase;
+	}
+	
+	ul {
+		font-weight: 500;
+		color: #757575;
+	}
+	
+	ul {
+		margin-top: 50px;
+		padding: 0;
+		list-style: none;
+		li {
+			margin: 24px 0;
+			span {
+				&:hover {
+					cursor: pointer;
+				}
+			}
+			a {
+				color: #757575;
+			}
+		}
 	}
 </style>
