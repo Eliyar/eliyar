@@ -2,7 +2,7 @@
 	<div class="wrapper d-flex justify-content-center align-items-center">
 		<div class="content">
 			<h1>Yiliyaer Maimaitijiang</h1>
-			<h2>Web Development & Design</h2>
+			<div class="tagline"><span>Web Development & Design</span></div>
 			<ul>
 				<li>
 					<router-link :to="{ name: 'Projects' }" tag="span">Projects</router-link>
@@ -28,11 +28,34 @@
 	
 	.content {
 		text-transform: uppercase;
+		.tagline {
+			font-family: "Didot", "sans-serif", Serif;
+			position: relative;
+			span {
+				font-size: 20px;
+				font-weight: 500;
+				background: white;
+				padding: 0 16px;
+				position: relative;
+				z-index: 1;
+			}
+			&:after {
+				content: '';
+				height: 1px;
+				position: absolute;
+				top: 49%;
+				left: 0;
+				right: 0;
+				background: #333333;
+				background: -moz-linear-gradient(left, white 0%, #333333 20%, #333333 80%, white 100%);
+				background: -webkit-linear-gradient(left, white 0%, #333333 20%, #333333 80%, white 100%);
+				background: linear-gradient(to right, white 0%, #333333 20%, #333333 80%, white 100%);
+			}
+		}
 	}
 	
 	ul {
 		font-weight: 500;
-		color: #757575;
 	}
 	
 	ul {
@@ -47,7 +70,7 @@
 				}
 			}
 			a {
-				color: #757575;
+				color: #333333;
 			}
 		}
 	}
