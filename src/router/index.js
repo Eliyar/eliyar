@@ -4,6 +4,7 @@ import Home from '@/components/Home'
 import Projects from '@/components/Projects'
 import Designs from '@/components/Designs'
 import SliderModal from '@/components/SliderModal'
+import Contact from '@/components/Contact'
 import NotFound from '@/components/NotFound'
 
 Vue.use(Router)
@@ -26,6 +27,10 @@ export default new Router({
         path: '/designs/:projectID/attachment/:assetID',
         name: 'SliderModal',
         component: SliderModal
+    }, {
+        path: '/contact',
+        name: 'Contact',
+        component: Contact
     }, {
         path: '/404',
         alias: '*',

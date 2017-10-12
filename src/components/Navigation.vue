@@ -12,6 +12,9 @@
 		<b-dropdown-divider></b-dropdown-divider>
 		<b-dropdown-item href="https://github.com/eliyar" target="_blank"><span>GitHub</span></b-dropdown-item>
 		<b-dropdown-item href="https://linkedin.com/in/eliyar-m" target="_blank"><span>LinkedIn</span></b-dropdown-item>
+		<b-dropdown-item>
+			<router-link :to="{ name: 'Contact' }" active-class="active" exact tag="span">Contact</router-link>
+		</b-dropdown-item>
 	</b-dropdown>
 </template>
 

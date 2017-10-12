@@ -12,6 +12,9 @@
 				</li>
 				<li><a href="https://github.com/eliyar" target="_blank">GitHub</a></li>
 				<li><a href="https://linkedin.com/in/eliyar-m" target="_blank">LinkedIn</a></li>
+				<li>
+					<router-link :to="{ name: 'Contact' }" tag="span">Contact</router-link>
+				</li>
 			</ul>
 		</div>
 	</div>
