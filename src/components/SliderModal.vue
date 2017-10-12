@@ -4,11 +4,11 @@
 			<div class="row">
 				<div class="logo-block d-none d-md-flex justify-content-center align-items-center">
 					<div class="logo"></div>
-					<div>Project Name</div>
+					<div>{{ data.project.name }}</div>
 				</div>
-				<div class="caption-block col d-flex align-items-center"><span>This is the caption</span></div>
+				<div class="caption-block col d-flex align-items-center"><span>{{ currentAsset.caption }}</span></div>
 				<div class="thumbnail-block col-12 col-lg d-flex justify-content-lg-end justify-content-start align-items-center">
-					<div class="thumbnail" v-for="{ thumbnail, index } in 4" :key="index"></div>
+					<div class="thumbnail" :class="{ 'active' : asset.id === currentAsset.id }" v-for="(asset, index) in data.assets" :key="index" @click="onThumbnailClick(asset)"></div>
 				</div>
 				<div class="close-block d-flex justify-content-center align-items-center" @click="onCloseModal">
 					<i class="material-icons">close</i>
@@ -16,12 +16,8 @@
 			</div>
 		</div>
 		<b-modal id="slider-modal" ref="sliderModal" size="lg" class="d-flex" @shown="onModalShown" @hide="onModalHide">
-			<!-- <img src="http://res.cloudinary.com/dspnhpwnp/image/upload/v1507763235/sample.jpg" alt="This is the caption" class="img-fluid"> -->
-			<!-- <a href="http://res.cloudinary.com/dspnhpwnp/image/upload/v1507763664/Test%20Folder/Test_Image.jpg" target="_blank">
-												<img src="http://res.cloudinary.com/dspnhpwnp/image/upload/v1507763664/Test%20Folder/Test_Image.jpg" alt="This is the caption" class="img-fluid">
-											</a> -->
-			<a :href="currentImage" target="_blank">
-				<img :src="currentImage" alt="This is the caption" class="img-fluid">
+			<a :href="currentAsset.url" target="_blank">
+				<img :src="currentAsset.url" alt="This is the caption" class="img-fluid">
 			</a>
 		</b-modal>
 	</div>
@@ -31,8 +27,44 @@
 	export default {
 		data() {
 			return {
-				modalShown: false,
-				currentImage: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1507765101/Test%20Folder/Test_Image.jpg'
+				modalShown: false
+			}
+		},
+		computed: {
+			designs: {
+				get() {
+					return this.$store.getters.getDesigns;
+				}
+			},
+			data() {
+				const projectID = this.$route.params.projectID;
+	
+				const project = this.designs.find((iterator) => {
+					return iterator.project.id === projectID;
+				}) || null;
+	
+				if (project) {
+					return project;
+				} else {
+					this.$router.push({
+						name: 'NotFound'
+					});
+				}
+			},
+			currentAsset() {
+				const assetID = this.$route.params.assetID;
+				
+				const asset = this.data.assets.find((iterator) => {
+					return iterator.id === assetID;
+				}) || null;
+	
+				if (asset) {
+					return asset;
+				} else {
+					this.$router.push({
+						name: 'NotFound'
+					});
+				}
 			}
 		},
 		methods: {
@@ -47,6 +79,15 @@
 			},
 			onCloseModal() {
 				this.$refs.sliderModal.hide();
+			},
+			onThumbnailClick(asset) {
+				this.$router.push({
+					name: 'SliderModal',
+					params: {
+						projectID: this.data.project.id,
+						assetID: asset.id
+					}
+				})
 			}
 		},
 		mounted() {

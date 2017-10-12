@@ -1,9 +1,10 @@
 const state = {
-    packages: [{
+    designs: [{
         project: {
             id: '9183944171',
             name: 'Project A',
             url: 'https://google.ca',
+            logo: 'logo_url',
             thumbnail: 'thumbnail_url',
         },
         assets: [{
@@ -21,8 +22,8 @@ const state = {
 }
 
 const getters = {
-    getPackages: state => {
-        return state.packages;
+    getDesigns: state => {
+        return state.designs;
     }
 }
 

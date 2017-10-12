@@ -1,12 +1,11 @@
 <template>
 	<div class="wrapper">
 		<div class="content">
-			<pre>{{ packages }}</pre>
 			<app-navigation :page="'Designs'"></app-navigation>
 			<div class="cards-wrapper container-fluid">
 				<div class="row">
-					<div class="col-12 col-lg-4 card-wrapper" v-for="(card, index) in 4" :key="index">
-						<app-case-card :source="'designs'"></app-case-card>
+					<div class="col-12 col-lg-4 card-wrapper" v-for="(design, index) in designs" :key="design.project.id">
+						<app-case-card :source="'designs'" :data="design"></app-case-card>
 					</div>
 				</div>
 			</div>
@@ -20,9 +19,9 @@
 	
 	export default {
 		computed: {
-			packages: {
+			designs: {
 				get() {
-					return this.$store.getters.getPackages;
+					return this.$store.getters.getDesigns;
 				}
 			}
 		},

@@ -1,23 +1,31 @@
 <template>
 	<div>
-		<div class="image-wrapper" @click="onImageClick">
+		<div class="image-wrapper" @click="onImageClick(data)">
 		</div>
 		<div class="d-flex justify-content-between align-items-end">
-			<div class="name">Project Name</div>
-			<div v-if="source === 'designs'" class="action">View Project</div>
+			<div class="name">{{ data.project.name }}</div>
+			<a v-if="source === 'designs'" :href="data.project.url" target="_blank">
+				<div class="action">View Project</div>
+			</a>
 		</div>
 	</div>
 </template>
 
 <script>
 	export default {
-		props: ['source'],
+		props: ['source', 'data'],
 		methods: {
-			onImageClick() {
+			onImageClick(data) {
 				if (this.source === 'projects') {
 					// go to project URL
 				} else if (this.source === 'designs') {
-					this.$router.push({ name: 'SliderModal', params: { projectID: '123', assetID: '321' } })
+					this.$router.push({
+						name: 'SliderModal',
+						params: {
+							projectID: data.project.id,
+							assetID: data.assets[0].id
+						}
+					})
 				}
 			}
 		}
