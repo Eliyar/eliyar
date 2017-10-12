@@ -5,30 +5,22 @@
 			<div class="cards-wrapper container-fluid">
 				<div class="row">
 					<div class="col-12 col-lg-4 card-wrapper" v-for="(card, index) in 10" :key="index">
-						<app-case-card v-b-modal.slider-modal></app-case-card>
-						<div class="d-flex justify-content-between align-items-end">
-							<div class="name">Project Name</div>
-							<div class="action">View Project</div>
-						</div>
+						<app-case-card :source="'projects'"></app-case-card>
 					</div>
 				</div>
 			</div>
 		</div>
-	
-		<app-slider-modal></app-slider-modal>
 	</div>
 </template>
 
 <script>
 	import Navigation from '@/components/Navigation'
 	import CaseCard from '@/components/CaseCard'
-	import SliderModal from '@/components/SliderModal'
 	
 	export default {
 		components: {
 			'app-navigation': Navigation,
-			'app-case-card': CaseCard,
-			'app-slider-modal': SliderModal
+			'app-case-card': CaseCard
 		}
 	}
 </script>

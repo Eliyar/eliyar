@@ -10,12 +10,12 @@
 		</div>
 		<b-modal id="slider-modal" ref="sliderModal" size="lg" class="d-flex" @shown="onModalShown" @hide="onModalHide">
 			<!-- <img src="http://res.cloudinary.com/dspnhpwnp/image/upload/v1507763235/sample.jpg" alt="This is the caption" class="img-fluid"> -->
-			<a href="http://res.cloudinary.com/dspnhpwnp/image/upload/v1507763664/Test%20Folder/Test_Image.jpg" target="_blank">
+			<!-- <a href="http://res.cloudinary.com/dspnhpwnp/image/upload/v1507763664/Test%20Folder/Test_Image.jpg" target="_blank">
 				<img src="http://res.cloudinary.com/dspnhpwnp/image/upload/v1507763664/Test%20Folder/Test_Image.jpg" alt="This is the caption" class="img-fluid">
-			</a>
-			<!-- <a :href="currentImage" target="_blank">
-				<img :src="currentImage" alt="This is the caption" class="img-fluid">
 			</a> -->
+			<a :href="currentImage" target="_blank">
+				<img :src="currentImage" alt="This is the caption" class="img-fluid">
+			</a>
 		</b-modal>
 	</div>
 </template>
@@ -25,7 +25,7 @@
 		data() {
 			return {
 				modalShown: false,
-				currentImage: 'http://res.cloudinary.com/dspnhpwnp/image/upload/v1507765101/Test%20Folder/Test_Image_2.jpg'
+				currentImage: 'http://res.cloudinary.com/dspnhpwnp/image/upload/v1507765101/Test%20Folder/Test_Image.jpg'
 			}
 		},
 		methods: {
@@ -34,11 +34,16 @@
 			},
 			onModalHide() {
 				this.modalShown = false;
+				this.$router.push({ name: 'Designs' })
 			},
 			onCloseModal() {
 				this.$refs.sliderModal.hide();
 			}
+		},
+		mounted() {
+			this.$refs.sliderModal.show();
 		}
+
 	}
 </script>
 
