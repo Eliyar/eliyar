@@ -33,7 +33,7 @@
 			position: relative;
 			span {
 				font-size: 20px;
-				font-weight: 500;
+				font-weight: 600;
 				background: white;
 				padding: 0 16px;
 				position: relative;

@@ -28,7 +28,9 @@
 			border: 0;
 			padding: 0;
 			font-size: 2em;
+			font-weight: 900;
 			text-transform: uppercase;
+			font-family: "Didot", "sans-serif", Serif;
 			&:after {
 				margin-left: 12px;
 				margin-bottom: 4px;
@@ -41,6 +43,7 @@
 			}
 		}
 		&-menu {
+			min-width: 12em;
 			border: 0;
 			box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.07);
 		}
@@ -49,7 +52,7 @@
 			span,
 			a {
 				display: block;
-				padding: 0.4rem 1.5rem;
+				padding: 0.6rem 1.5rem;
 				color: initial;
 				text-transform: uppercase;
 				&:hover {
