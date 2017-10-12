@@ -17,7 +17,7 @@
 		methods: {
 			onImageClick(data) {
 				if (this.source === 'projects') {
-					// go to project URL
+					window.open(data.project.url);
 				} else if (this.source === 'designs') {
 					this.$router.push({
 						name: 'SliderModal',

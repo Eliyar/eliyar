@@ -4,8 +4,8 @@
 			<app-navigation :page="'Projects'"></app-navigation>
 			<div class="cards-wrapper container-fluid">
 				<div class="row">
-					<div class="col-12 col-lg-4 card-wrapper" v-for="(card, index) in 10" :key="index">
-						<app-case-card :source="'projects'"></app-case-card>
+					<div class="col-12 col-lg-4 card-wrapper" v-for="(project, index) in projects" :key="index">
+						<app-case-card :source="'projects'" :data="project"></app-case-card>
 					</div>
 				</div>
 			</div>
@@ -28,9 +28,6 @@
 		components: {
 			'app-navigation': Navigation,
 			'app-case-card': CaseCard
-		},
-		created() {
-			console.log('projects:', this.projects);
 		}
 	}
 </script>

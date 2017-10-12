@@ -4,7 +4,7 @@
 			<app-navigation :page="'Designs'"></app-navigation>
 			<div class="cards-wrapper container-fluid">
 				<div class="row">
-					<div class="col-12 col-lg-4 card-wrapper" v-for="(design, index) in designs" :key="design.project.id">
+					<div class="col-12 col-lg-4 card-wrapper" v-for="(design, index) in designs" :key="index">
 						<app-case-card :source="'designs'" :data="design"></app-case-card>
 					</div>
 				</div>

@@ -27,7 +27,8 @@ export default new Router({
         name: 'SliderModal',
         component: SliderModal
     }, {
-        path: '**',
+        path: '/404',
+        alias: '*',
         name: 'NotFound',
         component: NotFound
     }]

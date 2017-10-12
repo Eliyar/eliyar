@@ -25,7 +25,6 @@
 		width: calc(100vw - 32px);
 		height: calc(100vh - 32px);
 		margin: 16px;
-		background: white;
 		box-shadow: 0 2px 4px 0 rgba(black, 0.07);
 	}
 	
@@ -37,7 +36,6 @@
 			span {
 				font-size: 20px;
 				font-weight: 600;
-				background: white;
 				padding: 0 16px;
 				position: relative;
 				z-index: 1;

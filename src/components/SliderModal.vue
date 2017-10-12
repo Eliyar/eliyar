@@ -15,7 +15,7 @@
 				</div>
 			</div>
 		</div>
-		<b-modal id="slider-modal" ref="sliderModal" size="lg" class="d-flex" @shown="onModalShown" @hide="onModalHide">
+		<b-modal v-if="data && currentAsset" id="slider-modal" ref="sliderModal" size="lg" class="d-flex" @shown="onModalShown" @hide="onModalHide">
 			<a :href="currentAsset.url" target="_blank">
 				<img :src="currentAsset.url" alt="This is the caption" class="img-fluid">
 			</a>
@@ -49,11 +49,12 @@
 					this.$router.push({
 						name: 'NotFound'
 					});
+					return null;
 				}
 			},
 			currentAsset() {
 				const assetID = this.$route.params.assetID;
-				
+	
 				const asset = this.data.assets.find((iterator) => {
 					return iterator.id === assetID;
 				}) || null;
@@ -64,6 +65,7 @@
 					this.$router.push({
 						name: 'NotFound'
 					});
+					return null;
 				}
 			}
 		},
@@ -91,7 +93,9 @@
 			}
 		},
 		mounted() {
-			this.$refs.sliderModal.show();
+			if (this.data && this.currentAsset) {
+				this.$refs.sliderModal.show();
+			}
 		}
 	}
 </script>
