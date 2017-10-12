@@ -32,7 +32,7 @@
 		data() {
 			return {
 				modalShown: false,
-				currentImage: 'http://res.cloudinary.com/dspnhpwnp/image/upload/v1507765101/Test%20Folder/Test_Image.jpg'
+				currentImage: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1507765101/Test%20Folder/Test_Image.jpg'
 			}
 		},
 		methods: {
@@ -51,9 +51,6 @@
 		},
 		mounted() {
 			this.$refs.sliderModal.show();
-		},
-		created() {
-			console.log('here');
 		}
 	}
 </script>

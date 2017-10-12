@@ -1,6 +1,7 @@
 <template>
 	<div class="wrapper">
 		<div class="content">
+			<pre>{{ value | json }}</pre>
 			<app-navigation :page="'Designs'"></app-navigation>
 			<div class="cards-wrapper container-fluid">
 				<div class="row">
@@ -18,6 +19,13 @@
 	import CaseCard from '@/components/CaseCard'
 	
 	export default {
+		computed: {
+			value: {
+				get() {
+					return this.$store.getters.getValue;
+				}
+			}
+		},
 		components: {
 			'app-navigation': Navigation,
 			'app-case-card': CaseCard

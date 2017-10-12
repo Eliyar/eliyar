@@ -4,6 +4,9 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+// vuex
+import { vuexStore } from './vuex-store/vuex-store';
+
 // Bootstrap Vue.js
 import BootstrapVue from 'bootstrap-vue'
 Vue.use(BootstrapVue)
@@ -13,6 +16,7 @@ Vue.config.productionTip = false
 /* eslint-disable no-new */
 new Vue({
     el: '#app',
+    store: vuexStore,
     router,
     template: '<App/>',
     components: { App }
