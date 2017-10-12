@@ -1,5 +1,5 @@
 <template>
-	<b-dropdown :text="page" variant="link" offset="0 16">
+	<b-dropdown :text="page" variant="link" offset="0, 16">
 		<b-dropdown-item>
 			<router-link :to="{ name: 'Home' }" active-class="active" exact tag="span">Home</router-link>
 		</b-dropdown-item>
