@@ -1,7 +1,7 @@
 <template>
 	<div class="wrapper">
 		<div class="content">
-			<pre>{{ value | json }}</pre>
+			<pre>{{ packages }}</pre>
 			<app-navigation :page="'Designs'"></app-navigation>
 			<div class="cards-wrapper container-fluid">
 				<div class="row">
@@ -20,9 +20,9 @@
 	
 	export default {
 		computed: {
-			value: {
+			packages: {
 				get() {
-					return this.$store.getters.getValue;
+					return this.$store.getters.getPackages;
 				}
 			}
 		},
