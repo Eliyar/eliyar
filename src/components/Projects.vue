@@ -18,9 +18,19 @@
 	import CaseCard from '@/components/CaseCard'
 	
 	export default {
+		computed: {
+			projects: {
+				get() {
+					return this.$store.getters.getProjects;
+				}
+			}
+		},
 		components: {
 			'app-navigation': Navigation,
 			'app-case-card': CaseCard
+		},
+		created() {
+			console.log('projects:', this.projects);
 		}
 	}
 </script>
