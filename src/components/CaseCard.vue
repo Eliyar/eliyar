@@ -1,10 +1,11 @@
 <template>
 	<div>
-		<div class="image-wrapper" @click="onImageClick(data)">
+		<div class="image-wrapper" @click="onImageClick(portfolio)">
 		</div>
 		<div class="d-flex justify-content-between align-items-end">
-			<div class="name">{{ data.project.name }}</div>
-			<a v-if="source === 'designs'" :href="data.project.url" target="_blank">
+			<div class="name">{{ portfolio.project.name }}</div>
+			<div v-if="source === 'projects' && portfolio.assets" class="action" @click="onViewDesigns(portfolio)">View Designs</div>
+			<a v-if="source === 'designs'" :href="portfolio.project.url" target="_blank">
 				<div class="action">View Project</div>
 			</a>
 		</div>
@@ -13,20 +14,23 @@
 
 <script>
 	export default {
-		props: ['source', 'data'],
+		props: ['source', 'portfolio'],
 		methods: {
-			onImageClick(data) {
+			onImageClick(portfolio) {
 				if (this.source === 'projects') {
-					window.open(data.project.url);
+					window.open(portfolio.project.url);
 				} else if (this.source === 'designs') {
-					this.$router.push({
-						name: 'SliderModal',
-						params: {
-							projectID: data.project.id,
-							assetID: data.assets[0].id
-						}
-					})
+					this.onViewDesigns(portfolio);
 				}
+			},
+			onViewDesigns(portfolio) {
+				this.$router.push({
+					name: 'SliderModal',
+					params: {
+						projectID: portfolio.project.id,
+						assetID: portfolio.assets[0].id
+					}
+				})
 			}
 		}
 	}

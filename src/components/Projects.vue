@@ -4,8 +4,8 @@
 			<app-navigation :page="'Projects'"></app-navigation>
 			<div class="cards-wrapper container-fluid">
 				<div class="row">
-					<div class="col-12 col-lg-4 card-wrapper" v-for="(project, index) in projects" :key="index">
-						<app-case-card :source="'projects'" :data="project"></app-case-card>
+					<div class="col-12 col-lg-4 card-wrapper" v-for="(portfolio, index) in portfolios" :key="index">
+						<app-case-card :source="'projects'" :portfolio="portfolio"></app-case-card>
 					</div>
 				</div>
 			</div>
@@ -19,9 +19,9 @@
 	
 	export default {
 		computed: {
-			projects: {
+			portfolios: {
 				get() {
-					return this.$store.getters.getProjects;
+					return this.$store.getters.getPortfolios;
 				}
 			}
 		},

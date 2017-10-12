@@ -4,18 +4,18 @@
 			<div class="row">
 				<div class="logo-block d-none d-md-flex justify-content-center align-items-center">
 					<div class="logo"></div>
-					<div>{{ data.project.name }}</div>
+					<div>{{ portfolio.project.name }}</div>
 				</div>
 				<div class="caption-block col d-flex align-items-center"><span>{{ currentAsset.caption }}</span></div>
 				<div class="thumbnail-block col-12 col-lg d-flex justify-content-lg-end justify-content-start align-items-center">
-					<div class="thumbnail" :class="{ 'active' : asset.id === currentAsset.id }" v-for="(asset, index) in data.assets" :key="index" @click="onThumbnailClick(asset)"></div>
+					<div class="thumbnail" :class="{ 'active' : asset.id === currentAsset.id }" v-for="(asset, index) in portfolio.assets" :key="index" @click="onThumbnailClick(asset)"></div>
 				</div>
 				<div class="close-block d-flex justify-content-center align-items-center" @click="onCloseModal">
 					<i class="material-icons">close</i>
 				</div>
 			</div>
 		</div>
-		<b-modal v-if="data && currentAsset" id="slider-modal" ref="sliderModal" size="lg" class="d-flex" @shown="onModalShown" @hide="onModalHide">
+		<b-modal v-if="portfolio && currentAsset" id="slider-modal" ref="sliderModal" size="lg" class="d-flex" @shown="onModalShown" @hide="onModalHide">
 			<a :href="currentAsset.url" target="_blank">
 				<img :src="currentAsset.url" alt="This is the caption" class="img-fluid">
 			</a>
@@ -31,15 +31,15 @@
 			}
 		},
 		computed: {
-			designs: {
+			portfolios: {
 				get() {
-					return this.$store.getters.getDesigns;
+					return this.$store.getters.getPortfolios;
 				}
 			},
-			data() {
+			portfolio() {
 				const projectID = this.$route.params.projectID;
 	
-				const project = this.designs.find((iterator) => {
+				const project = this.portfolios.find((iterator) => {
 					return iterator.project.id === projectID;
 				}) || null;
 	
@@ -55,7 +55,7 @@
 			currentAsset() {
 				const assetID = this.$route.params.assetID;
 	
-				const asset = this.data.assets.find((iterator) => {
+				const asset = this.portfolio.assets.find((iterator) => {
 					return iterator.id === assetID;
 				}) || null;
 	
@@ -86,14 +86,14 @@
 				this.$router.push({
 					name: 'SliderModal',
 					params: {
-						projectID: this.data.project.id,
+						projectID: this.portfolio.project.id,
 						assetID: asset.id
 					}
 				})
 			}
 		},
 		mounted() {
-			if (this.data && this.currentAsset) {
+			if (this.portfolio && this.currentAsset) {
 				this.$refs.sliderModal.show();
 			}
 		}

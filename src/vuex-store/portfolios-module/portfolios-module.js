@@ -1,5 +1,5 @@
 const state = {
-    designs: [{
+    portfolios: [{
         project: {
             id: '9183944171',
             name: 'Project A',
@@ -18,12 +18,28 @@ const state = {
             caption: 'This is the other caption',
             created_at: '2017-10-01'
         }]
+    }, {
+        project: {
+            id: '3473679912',
+            name: 'Project B',
+            url: 'https://youtube.ca',
+            logo: 'logo_url',
+            thumbnail: 'thumbnail_url',
+        }
+    }, {
+        project: {
+            id: '0469409122',
+            name: 'Project C',
+            url: 'https://twitter.com',
+            logo: 'logo_url',
+            thumbnail: 'thumbnail_url',
+        }
     }]
 }
 
 const getters = {
-    getDesigns: state => {
-        return state.designs;
+    getPortfolios: state => {
+        return state.portfolios;
     }
 }
 
