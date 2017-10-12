@@ -51,8 +51,10 @@
 		},
 		mounted() {
 			this.$refs.sliderModal.show();
+		},
+		created() {
+			console.log('here');
 		}
-	
 	}
 </script>
 
