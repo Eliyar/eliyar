@@ -42,9 +42,16 @@ const actions = {
             })
         }
     },
-    updatePageViews({ commit, dispatch }, page) {
+    updatePageViews({ commit }, page) {
         firebaseAuthenticate().then(() => {
             analyticsRef.child('pages').child(page).transaction(function(count) {
+                return (count || 0) + 1;
+            })
+        })
+    },
+    updatePageClicks({ commit }, click) {
+        firebaseAuthenticate().then(() => {
+            analyticsRef.child('clicks').child(click).transaction(function(count) {
                 return (count || 0) + 1;
             })
         })

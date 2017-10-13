@@ -26,12 +26,12 @@
 			}
 		},
 		methods: {
-			updatePageView(page) {
+			updatePageViews(page) {
 				this.$store.dispatch('updatePageViews', page);
 			}
 		},
 		created() {
-			this.updatePageView('projects');
+			this.updatePageViews('projects');
 		},
 		components: {
 			'app-navigation': Navigation,

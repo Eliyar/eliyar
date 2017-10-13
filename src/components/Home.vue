@@ -10,8 +10,8 @@
 				<li>
 					<router-link :to="{ name: 'Designs' }" tag="span">Designs</router-link>
 				</li>
-				<li><a href="https://github.com/eliyar" target="_blank">GitHub</a></li>
-				<li><a href="https://linkedin.com/in/eliyar-m" target="_blank">LinkedIn</a></li>
+				<li><a href="https://github.com/eliyar" target="_blank" @click="updatePageClicks('github')">GitHub</a></li>
+				<li><a href="https://linkedin.com/in/eliyar-m" target="_blank" @click="updatePageClicks('linkedin')">LinkedIn</a></li>
 				<li>
 					<router-link :to="{ name: 'Contact' }" tag="span">Contact</router-link>
 				</li>
@@ -31,12 +31,15 @@
 			}
 		},
 		methods: {
-			updatePageView(page) {
+			updatePageViews(page) {
 				this.$store.dispatch('updatePageViews', page);
+			},
+			updatePageClicks(click) {
+				this.$store.dispatch('updatePageClicks', click);
 			}
 		},
 		created() {
-			this.updatePageView('home');
+			this.updatePageViews('home');
 		}
 	}
 </script>

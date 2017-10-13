@@ -49,12 +49,12 @@
 						vm.formLoading = false;
 					});
 			},
-			updatePageView(page) {
+			updatePageViews(page) {
 				this.$store.dispatch('updatePageViews', page);
 			}
 		},
 		created() {
-			this.updatePageView('contact');
+			this.updatePageViews('contact');
 		},
 		components: {
 			'app-navigation': Navigation,
