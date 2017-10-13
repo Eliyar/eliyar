@@ -48,7 +48,13 @@
 						console.log("EmailJS error:", err);
 						vm.formLoading = false;
 					});
+			},
+			updatePageView(page) {
+				this.$store.dispatch('updatePageViews', page);
 			}
+		},
+		created() {
+			this.updatePageView('contact');
 		},
 		components: {
 			'app-navigation': Navigation,

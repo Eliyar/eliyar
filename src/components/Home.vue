@@ -16,9 +16,30 @@
 					<router-link :to="{ name: 'Contact' }" tag="span">Contact</router-link>
 				</li>
 			</ul>
+			<!-- <pre>analytics: {{ analytics }}</pre> -->
 		</div>
 	</div>
 </template>
+
+<script>
+	export default {
+		computed: {
+			analytics: {
+				get() {
+					return this.$store.getters.getAnalytics;
+				}
+			}
+		},
+		methods: {
+			updatePageView(page) {
+				this.$store.dispatch('updatePageViews', page);
+			}
+		},
+		created() {
+			this.updatePageView('home');
+		}
+	}
+</script>
 
 <style scoped lang="scss">
 	.wrapper {

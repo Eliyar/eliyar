@@ -17,6 +17,11 @@ Vue.use(BootstrapVue)
 
 Vue.config.productionTip = false
 
+// Firebase and VueFire
+var VueFire = require('vuefire')
+var firebase = require('firebase')
+Vue.use(VueFire)
+
 /* eslint-disable no-new */
 new Vue({
     el: '#app',

@@ -25,6 +25,14 @@
 				}
 			}
 		},
+		methods: {
+			updatePageView(page) {
+				this.$store.dispatch('updatePageViews', page);
+			}
+		},
+		created() {
+			this.updatePageView('projects');
+		},
 		components: {
 			'app-navigation': Navigation,
 			'app-case-card': CaseCard
