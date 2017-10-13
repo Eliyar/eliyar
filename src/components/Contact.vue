@@ -2,14 +2,14 @@
 	<div class="wrapper">
 		<div class="content">
 			<app-navigation :page="'Contact'"></app-navigation>
-			<h4 v-if="submitted">Thank you for your message.</h4>
+			<h4 v-if="formSubmitted">Thank you for your message.</h4>
 			<b-form @submit="onSubmit">
 				<div class="d-flex">
-					<b-form-input type="text" class="margin-right-24" v-model="form.name" required placeholder="Name" :disabled="submitted"></b-form-input>
-					<b-form-input type="email" v-model="form.email" required placeholder="Email" :disabled="submitted"></b-form-input>
+					<b-form-input type="text" class="margin-right-24" v-model="form.name" name="name" placeholder="Name" :disabled="formSubmitted" required></b-form-input>
+					<b-form-input type="email" v-model="form.email" name="email" placeholder="Email" :disabled="formSubmitted" required></b-form-input>
 				</div>
-				<b-form-textarea type="text" class="height-200 margin-top-24" v-model="form.message" required placeholder="Message" :disabled="submitted"></b-form-textarea>
-				<b-button type="submit" :disabled="submitted">Submit</b-button>
+				<b-form-textarea type="text" class="height-200 margin-top-24" v-model="form.message" name="message" placeholder="Message" :disabled="formSubmitted" required></b-form-textarea>
+				<b-button :class="{ 'is-loading' : formLoading }" type="submit" :disabled="formSubmitted">Submit</b-button>
 			</b-form>
 		</div>
 	</div>
@@ -26,14 +26,28 @@
 					name: '',
 					message: ''
 				},
-				submitted: false
+				formSubmitted: false,
+				formLoading: false
 			}
 		},
 		methods: {
 			onSubmit(ev) {
 				ev.preventDefault();
-				console.log('form values:', this.form);
-				this.submitted = true;
+	
+				const vm = this;
+				vm.formLoading = true;
+				emailjs.send("sendgrid", "contact_form_template", {
+						'from_name': this.form.name,
+						'from_email': this.form.email,
+						'message_html': this.form.message
+					})
+					.then(function(response) {
+						vm.formSubmitted = true;
+						vm.formLoading = false;
+					}, function(err) {
+						console.log("EmailJS error:", err);
+						vm.formLoading = false;
+					});
 			}
 		},
 		components: {
@@ -84,11 +98,43 @@
 			border-radius: 2px;
 			border: 0;
 			background: #333333;
+			color: white;
 			text-transform: uppercase;
 			box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.07);
+			position: relative;
+			&.is-loading {
+				color: transparent !important;
+				pointer-events: none;
+				&:after {
+					-webkit-animation: spinAround .5s infinite linear;
+					animation: spinAround .5s infinite linear;
+					border: 2px solid #dbdbdb;
+					border-radius: 290486px;
+					border-right-color: transparent;
+					border-top-color: transparent;
+					content: "";
+					display: block;
+					height: 1em;
+					position: relative;
+					width: 1em;
+					position: absolute;
+					left: calc(50% - (1em / 2));
+					top: calc(50% - (1em / 2));
+					position: absolute!important;
+				}
+			}
 			&:hover {
 				cursor: pointer;
 			}
+		}
+	}
+	
+	@keyframes spinAround {
+		from {
+			transform: rotate(0deg)
+		}
+		to {
+			transform: rotate(359deg)
 		}
 	}
 </style>

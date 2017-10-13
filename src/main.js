@@ -7,6 +7,10 @@ import router from './router'
 // vuex
 import { vuexStore } from './vuex-store/vuex-store';
 
+// vue-resource
+import VueResource from 'vue-resource';
+Vue.use(VueResource);
+
 // Bootstrap Vue.js
 import BootstrapVue from 'bootstrap-vue'
 Vue.use(BootstrapVue)
