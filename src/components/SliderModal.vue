@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="slider-modal-wrapper">
 		<div v-if="modalShown" class="slider-modal-header container-fluid d-flex justify-content-start align-items-center">
 			<div class="row">
 				<div class="logo-block d-none d-md-flex justify-content-center align-items-center">
@@ -139,6 +139,10 @@
 
 <style lang="scss">
 	.slider-modal {
+		&-wrapper {
+			height: 100vh;
+			background: black;
+		}
 		&-header {
 			padding: 0;
 			position: fixed;
@@ -243,6 +247,7 @@
 		&-backdrop {
 			&.show {
 				opacity: 0.9;
+				transition: opacity 1s ease;
 			}
 		}
 	}
