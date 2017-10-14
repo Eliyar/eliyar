@@ -22,16 +22,20 @@
 			</div>
 		</div>
 		<b-modal v-if="portfolio && currentAsset" id="slider-modal" ref="sliderModal" size="lg" class="d-flex" @shown="onModalShown" @hide="onModalHide">
-			<div class="d-flex justify-content-between align-items-center">
-				<div class="view-count margin-bottom-8"><span>{{ currentAsset.created_at }}</span></div>
-				<div class="view-count margin-bottom-8 d-flex align-items-center">
-					<i class="material-icons">visibility</i>
-					<span v-if="assetViews">{{ assetViews }}</span>
+			<transition name="fade" tag="div" appear>
+				<div>
+					<div class="d-flex justify-content-between align-items-center">
+						<div class="view-count margin-bottom-8"><span>{{ currentAsset.created_at }}</span></div>
+						<div class="view-count margin-bottom-8 d-flex align-items-center">
+							<i class="material-icons">visibility</i>
+							<span v-if="assetViews">{{ assetViews }}</span>
+						</div>
+					</div>
+					<a :href="currentAsset.url" target="_blank">
+						<img :src="currentAsset.url" alt="This is the caption" class="img-fluid">
+					</a>
 				</div>
-			</div>
-			<a :href="currentAsset.url" target="_blank">
-				<img :src="currentAsset.url" alt="This is the caption" class="img-fluid">
-			</a>
+			</transition>
 		</b-modal>
 	</div>
 </template>
@@ -250,5 +254,14 @@
 				transition: opacity 1s ease;
 			}
 		}
+	}
+	
+	.fade-enter {
+		transform: translateY(20px);
+		opacity: 0;
+	}
+	
+	.fade-enter-active {
+		transition: all 0.8s ease-out;
 	}
 </style>
