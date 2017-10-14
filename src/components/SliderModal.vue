@@ -1,5 +1,5 @@
 <template>
-	<div class="slider-modal-wrapper">
+	<div class="slider-modal-wrapper" @keydown="onKeydown">
 		<div v-if="modalShown" class="slider-modal-header container-fluid d-flex justify-content-start align-items-center">
 			<div class="row">
 				<div class="logo-block d-none d-md-flex justify-content-center align-items-center">
@@ -24,8 +24,7 @@
 		<b-modal v-if="portfolio && currentAsset" id="slider-modal" ref="sliderModal" size="lg" class="d-flex" @shown="onModalShown" @hide="onModalHide">
 			<transition name="fade" tag="div" appear>
 				<div>
-					<div class="d-flex justify-content-between align-items-center">
-						<div class="view-count margin-bottom-8"><span>{{ currentAsset.created_at }}</span></div>
+					<div class="d-flex justify-content-start align-items-center">
 						<div class="view-count margin-bottom-8 d-flex align-items-center">
 							<i class="material-icons">visibility</i>
 							<span v-if="assetViews">{{ assetViews }}</span>
@@ -130,6 +129,38 @@
 			},
 			updateAssetViews(payload) {
 				this.$store.dispatch('updateAssetViews', payload);
+			},
+			onKeydown(event) {
+				const keyCode = event.keyCode;
+				if (keyCode !== 39 && keyCode !== 37) {
+					return;
+				}
+	
+				let asset, index;
+	
+				if (keyCode === 39) {
+					index = this.portfolio.assets.indexOf(this.portfolio.assets.find(iterator => {
+						return iterator.id === this.currentAsset.id
+					})) + 1;
+	
+					if (index < this.portfolio.assets.length) {
+						asset = this.portfolio.assets[index]
+					} else {
+						asset = this.portfolio.assets[0]
+					}
+				} else if (keyCode === 37) {
+					index = this.portfolio.assets.indexOf(this.portfolio.assets.find(iterator => {
+						return iterator.id === this.currentAsset.id
+					})) - 1;
+	
+					if (index < 0) {
+						asset = this.portfolio.assets[this.portfolio.assets.length - 1]
+					} else {
+						asset = this.portfolio.assets[index]
+					}
+				}
+	
+				this.onThumbnailClick(asset);
 			}
 		},
 		mounted() {
@@ -165,7 +196,6 @@
 				&-block {
 					height: 80px;
 					padding: 0 16px;
-					background: rgba(0, 0, 0, 0.2);
 				}
 				min-width: 44px;
 				min-height: 44px;
@@ -206,10 +236,8 @@
 				padding: 0 16px;
 			}
 			.close-block {
-				width: 80px;
 				height: 80px;
 				padding: 0 16px;
-				background: rgba(0, 0, 0, 0.2);
 				&:hover {
 					cursor: pointer;
 				}
