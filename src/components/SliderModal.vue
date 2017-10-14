@@ -60,6 +60,7 @@
 				}) || null;
 	
 				if (asset) {
+					this.updateAssetViews({ projectId: this.portfolio.project.id, assetId: asset.id });
 					return asset;
 				} else {
 					this.$router.push({
@@ -90,6 +91,9 @@
 						assetID: asset.id
 					}
 				})
+			},
+			updateAssetViews(payload) {
+				this.$store.dispatch('updateAssetViews', payload);
 			}
 		},
 		mounted() {

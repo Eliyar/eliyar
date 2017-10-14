@@ -63,6 +63,13 @@ const actions = {
             })
         })
     },
+    updateAssetViews({ commit }, payload) {
+        firebaseAuthenticate().then(() => {
+            analyticsRef.child('assets').child(payload.projectId + '/' + payload.assetId).transaction(function(count) {
+                return (count || 0) + 1;
+            })
+        })
+    }
 }
 
 export default {
