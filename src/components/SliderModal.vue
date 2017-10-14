@@ -111,6 +111,9 @@
 				this.$router.push({
 					name: 'Designs'
 				})
+
+				const body = document.getElementsByTagName("BODY")[0];
+				body.classList.remove('modal-open');
 			},
 			onCloseModal() {
 				this.$refs.sliderModal.hide();
