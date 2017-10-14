@@ -3,11 +3,11 @@
 		<div class="content">
 			<app-navigation :page="'Designs'"></app-navigation>
 			<div class="cards-wrapper container-fluid">
-				<div class="row">
-					<div v-if="portfolio.assets" class="col-12 col-lg-4 card-wrapper" v-for="(portfolio, index) in portfolios" :key="index">
+				<transition-group name="staggered-fade" class="row" tag="div" :css="false" @before-enter="beforeEnter" @enter="enter" @leave="leave" appear>
+					<div v-if="portfolio.assets" class="col-12 col-lg-4 card-wrapper" v-for="(portfolio, index) in portfolios" :key="index" :data-index="index">
 						<app-case-card :source="'designs'" :portfolio="portfolio"></app-case-card>
 					</div>
-				</div>
+				</transition-group>
 			</div>
 		</div>
 	</div>
@@ -28,6 +28,33 @@
 		methods: {
 			updatePageViews(page) {
 				this.$store.dispatch('updatePageViews', page);
+			},
+			beforeEnter: function(el) {
+				el.style.opacity = 0
+				el.style.bottom = '-30px'
+			},
+			enter: function(el, done) {
+				var delay = el.dataset.index * 200
+				setTimeout(() => {
+					Velocity(el, {
+						opacity: 1,
+						bottom: 0
+					}, {
+						easing: 'ease-out',
+						complete: done
+					})
+				}, delay)
+			},
+			leave: function(el, done) {
+				var delay = el.dataset.index * 200
+				setTimeout(() => {
+					Velocity(el, {
+						opacity: 0
+					}, {
+						easing: 'ease-out',
+						complete: done
+					})
+				}, delay)
 			}
 		},
 		created() {

@@ -34,6 +34,14 @@ const state = {
             logo: 'logo_url',
             thumbnail: 'thumbnail_url',
         }
+    }, {
+        project: {
+            id: 'qYQb30qJ',
+            name: 'Project D',
+            url: 'https://facebook.com',
+            logo: 'logo_url',
+            thumbnail: 'thumbnail_url',
+        }
     }]
 }
 
