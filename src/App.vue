@@ -9,6 +9,7 @@
 		name: 'app',
 		mounted() {
 			this.$store.dispatch('fetchAnalytics')
+			this.$store.dispatch('updatePageReferrer', window.document.referrer || null)
 		}
 	}
 </script>

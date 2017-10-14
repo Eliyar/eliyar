@@ -69,6 +69,16 @@ const actions = {
                 return (count || 0) + 1;
             })
         })
+    },
+    updatePageReferrer({ commit }, url) {
+        if (!url) {
+            return;
+        }
+
+        firebaseAuthenticate().then(() => {
+            const key = analyticsRef.child('referrers').push().key;
+            analyticsRef.child('referrers').child(key).update({ url: url });
+        })
     }
 }
 
