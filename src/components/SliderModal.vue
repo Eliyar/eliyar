@@ -22,6 +22,13 @@
 			</div>
 		</div>
 		<b-modal v-if="portfolio && currentAsset" id="slider-modal" ref="sliderModal" size="lg" class="d-flex" @shown="onModalShown" @hide="onModalHide">
+			<div class="d-flex justify-content-between align-items-center">
+				<div class="view-count margin-bottom-8"><span>{{ currentAsset.created_at }}</span></div>
+				<div class="view-count margin-bottom-8 d-flex align-items-center">
+					<i class="material-icons">visibility</i>
+					<span v-if="assetViews">{{ assetViews }}</span>
+				</div>
+			</div>
 			<a :href="currentAsset.url" target="_blank">
 				<img :src="currentAsset.url" alt="This is the caption" class="img-fluid">
 			</a>
@@ -81,6 +88,14 @@
 			projectViews: {
 				get() {
 					return this.$store.getters.getProjectViews[this.portfolio.project.id];
+				}
+			},
+			assetViews: {
+				get() {
+					const assets = this.$store.getters.getAssetViews[this.portfolio.project.id];
+					if (assets) {
+						return assets[this.currentAsset.id]
+					}
 				}
 			}
 		},
@@ -219,6 +234,7 @@
 		&-body {
 			padding: 0;
 			margin: 0 16px 16px 16px;
+			color: white;
 			img {
 				width: 100%;
 				border-radius: 2px;
