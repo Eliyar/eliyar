@@ -1,22 +1,24 @@
 <template>
 	<div class="wrapper d-flex justify-content-center align-items-center">
-		<div class="content">
-			<h1>Yiliyaer Maimaitijiang</h1>
-			<div class="tagline"><span>Web Development & Design</span></div>
-			<ul>
-				<li>
-					<router-link :to="{ name: 'Projects' }" tag="span">Projects</router-link>
-				</li>
-				<li>
-					<router-link :to="{ name: 'Designs' }" tag="span">Designs</router-link>
-				</li>
-				<li><a href="https://github.com/eliyar" target="_blank" @click="updatePageClicks('github')">GitHub</a></li>
-				<li><a href="https://linkedin.com/in/eliyar-m" target="_blank" @click="updatePageClicks('linkedin')">LinkedIn</a></li>
-				<li>
-					<router-link :to="{ name: 'Contact' }" tag="span">Contact</router-link>
-				</li>
-			</ul>
-		</div>
+		<transition name="fade" tag="div" appear>
+			<div class="content">
+				<h1>Yiliyaer Maimaitijiang</h1>
+				<div class="tagline"><span>Web Development & Design</span></div>
+				<ul>
+					<li>
+						<router-link :to="{ name: 'Projects' }" tag="span">Projects</router-link>
+					</li>
+					<li>
+						<router-link :to="{ name: 'Designs' }" tag="span">Designs</router-link>
+					</li>
+					<li><a href="https://github.com/eliyar" target="_blank" @click="updatePageClicks('github')">GitHub</a></li>
+					<li><a href="https://linkedin.com/in/eliyar-m" target="_blank" @click="updatePageClicks('linkedin')">LinkedIn</a></li>
+					<li>
+						<router-link :to="{ name: 'Contact' }" tag="span">Contact</router-link>
+					</li>
+				</ul>
+			</div>
+		</transition>
 	</div>
 </template>
 
@@ -92,5 +94,14 @@
 				color: #333333;
 			}
 		}
+	}
+	
+	.fade-enter {
+		transform: translateY(20px);
+		opacity: 0;
+	}
+	
+	.fade-enter-active {
+		transition: all 0.8s ease-out;
 	}
 </style>

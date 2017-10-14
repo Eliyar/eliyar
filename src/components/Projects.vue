@@ -34,7 +34,7 @@
 				el.style.bottom = '-30px'
 			},
 			enter: function(el, done) {
-				var delay = el.dataset.index * 200
+				var delay = el.dataset.index * 150
 				setTimeout(() => {
 					Velocity(el, {
 						opacity: 1,
@@ -46,7 +46,7 @@
 				}, delay)
 			},
 			leave: function(el, done) {
-				var delay = el.dataset.index * 200
+				var delay = el.dataset.index * 150
 				setTimeout(() => {
 					Velocity(el, {
 						opacity: 0

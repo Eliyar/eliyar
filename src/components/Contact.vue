@@ -4,12 +4,18 @@
 			<app-navigation :page="'Contact'"></app-navigation>
 			<h4 v-if="formSubmitted">Thank you for your message.</h4>
 			<b-form @submit="onSubmit">
-				<div class="d-flex">
-					<b-form-input type="text" class="margin-right-24" v-model="form.name" name="name" placeholder="Name" :disabled="formSubmitted" required></b-form-input>
-					<b-form-input type="email" v-model="form.email" name="email" placeholder="Email" :disabled="formSubmitted" required></b-form-input>
-				</div>
-				<b-form-textarea type="text" class="height-200 margin-top-24" v-model="form.message" name="message" placeholder="Message" :disabled="formSubmitted" required></b-form-textarea>
-				<b-button :class="{ 'is-loading' : formLoading }" type="submit" :disabled="formSubmitted">Submit</b-button>
+				<transition-group name="staggered-fade" tag="div" :css="false" @before-enter="beforeEnter" @enter="enter" @leave="leave" appear>
+					<div class="d-flex position-relative" :key="0" :data-index="0">
+						<b-form-input type="text" class="margin-right-24" v-model="form.name" name="name" placeholder="Name" :disabled="formSubmitted" required></b-form-input>
+						<b-form-input type="email" v-model="form.email" name="email" placeholder="Email" :disabled="formSubmitted" required></b-form-input>
+					</div>
+					<div class="position-relative" :key="1" :data-index="1">
+						<b-form-textarea type="text" class="height-200 margin-top-24" v-model="form.message" name="message" placeholder="Message" :disabled="formSubmitted" required></b-form-textarea>
+					</div>
+					<div class="position-relative" :key="2" :data-index="2">
+						<b-button :class="{ 'is-loading' : formLoading }" type="submit" :disabled="formSubmitted">Submit</b-button>
+					</div>
+				</transition-group>
 			</b-form>
 		</div>
 	</div>
@@ -51,6 +57,33 @@
 			},
 			updatePageViews(page) {
 				this.$store.dispatch('updatePageViews', page);
+			},
+			beforeEnter: function(el) {
+				el.style.opacity = 0
+				el.style.bottom = '-30px'
+			},
+			enter: function(el, done) {
+				var delay = el.dataset.index * 150
+				setTimeout(() => {
+					Velocity(el, {
+						opacity: 1,
+						bottom: 0
+					}, {
+						easing: 'ease-out',
+						complete: done
+					})
+				}, delay)
+			},
+			leave: function(el, done) {
+				var delay = el.dataset.index * 150
+				setTimeout(() => {
+					Velocity(el, {
+						opacity: 0
+					}, {
+						easing: 'ease-out',
+						complete: done
+					})
+				}, delay)
 			}
 		},
 		created() {
@@ -72,6 +105,9 @@
 		margin: auto;
 		padding: 16px;
 		text-align: left;
+		.position-relative {
+			position: relative;
+		}
 		h4 {
 			margin-top: 16px;
 			font-family: "Didot", "sans-serif", Serif;
