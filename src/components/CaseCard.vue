@@ -1,6 +1,10 @@
 <template>
 	<div>
 		<div class="image-wrapper" @click="onImageClick(portfolio)">
+			<div v-if="projectViews" class="view-count position-bottom-right d-flex align-items-center">
+				<i class="material-icons">visibility</i>
+				<span>{{ projectViews }}</span>
+			</div>
 		</div>
 		<div class="d-flex justify-content-between align-items-end">
 			<div class="name">{{ portfolio.project.name }}</div>
@@ -15,6 +19,13 @@
 <script>
 	export default {
 		props: ['source', 'portfolio'],
+		computed: {
+			projectViews: {
+				get() {
+					return this.$store.getters.getProjectViews[this.portfolio.project.id];
+				}
+			},
+		},
 		methods: {
 			onImageClick(portfolio) {
 				if (this.source === 'projects') {
@@ -32,7 +43,6 @@
 						assetID: portfolio.assets[0].id
 					}
 				})
-				this.updateProjectViews(portfolio.project.id);
 			},
 			updateProjectViews(projectId) {
 				this.$store.dispatch('updateProjectViews', projectId);
@@ -48,6 +58,7 @@
 			background: white;
 			box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.07);
 			border-radius: 2px;
+			position: relative;
 			&:hover {
 				cursor: pointer;
 			}

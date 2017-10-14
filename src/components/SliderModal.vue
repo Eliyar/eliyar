@@ -4,7 +4,13 @@
 			<div class="row">
 				<div class="logo-block d-none d-md-flex justify-content-center align-items-center">
 					<div class="logo"></div>
-					<div>{{ portfolio.project.name }}</div>
+					<div class="d-flex flex-column align-items-start">
+						<div>{{ portfolio.project.name }}</div>
+						<div class="view-count d-flex align-items-center">
+							<i class="material-icons">visibility</i>
+							<span>{{ projectViews }}</span>
+						</div>
+					</div>
 				</div>
 				<div class="caption-block col d-flex align-items-center"><span>{{ currentAsset.caption }}</span></div>
 				<div class="thumbnail-block col-12 col-lg d-flex justify-content-lg-end justify-content-start align-items-center">
@@ -60,13 +66,21 @@
 				}) || null;
 	
 				if (asset) {
-					this.updateAssetViews({ projectId: this.portfolio.project.id, assetId: asset.id });
+					this.updateAssetViews({
+						projectId: this.portfolio.project.id,
+						assetId: asset.id
+					});
 					return asset;
 				} else {
 					this.$router.push({
 						name: 'NotFound'
 					});
 					return null;
+				}
+			},
+			projectViews: {
+				get() {
+					return this.$store.getters.getProjectViews[this.portfolio.project.id];
 				}
 			}
 		},
@@ -92,6 +106,9 @@
 					}
 				})
 			},
+			updateProjectViews(projectId) {
+				this.$store.dispatch('updateProjectViews', projectId);
+			},
 			updateAssetViews(payload) {
 				this.$store.dispatch('updateAssetViews', payload);
 			}
@@ -99,6 +116,7 @@
 		mounted() {
 			if (this.portfolio && this.currentAsset) {
 				this.$refs.sliderModal.show();
+				this.updateProjectViews(this.portfolio.project.id);
 			}
 		}
 	}

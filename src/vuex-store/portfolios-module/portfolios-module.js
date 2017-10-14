@@ -44,6 +44,6 @@ const getters = {
 }
 
 export default {
-    state: state,
-    getters: getters
+    state,
+    getters
 }

@@ -17,19 +17,47 @@ function firebaseAuthenticate() {
 }
 
 const state = {
-    analytics: {}
+    pages: {},
+    projects: {},
+    assets: {},
+    clicks: {},
+    referrers: {}
 }
 
 const getters = {
-    getAnalytics(state) {
-        return state.analytics;
+    getPageViews(state) {
+        return state.pages;
+    },
+    getProjectViews(state) {
+        return state.projects;
+    },
+    getAssetViews(state) {
+        return state.assets;
+    },
+    getPageClicks(state) {
+        return state.clicks;
+    },
+    getPageReferrers(state) {
+        return state.referrers;
     }
 }
 
 const mutations = {
-    updateAnalytics(state, data) {
-        state.analytics = data;
-    }
+    updatePageViews(state, data) {
+        state.pages = data;
+    },
+    updateProjectViews(state, data) {
+        state.projects = data;
+    },
+    updateAssetViews(state, data) {
+        state.assets = data;
+    },
+    updatePageClicks(state, data) {
+        state.clicks = data;
+    },
+    updatePageReferrers(state, data) {
+        state.referrers = data;
+    },
 }
 
 const actions = {
@@ -37,7 +65,25 @@ const actions = {
         if (!authenticated) {
             firebaseAuthenticate().then(() => {
                 analyticsRef.on('value', function(snapshot) {
-                    commit('updateAnalytics', snapshot.val())
+                    if (snapshot.val().hasOwnProperty('pages')) {
+                        commit('updatePageViews', snapshot.val().pages)
+                    }
+
+                    if (snapshot.val().hasOwnProperty('projects')) {
+                        commit('updateProjectViews', snapshot.val().projects)
+                    }
+
+                    if (snapshot.val().hasOwnProperty('assets')) {
+                        commit('updateAssetViews', snapshot.val().assets)
+                    }
+
+                    if (snapshot.val().hasOwnProperty('clicks')) {
+                        commit('updatePageClicks', snapshot.val().clicks)
+                    }
+
+                    if (snapshot.val().hasOwnProperty('referrers')) {
+                        commit('updatePageReferrers', snapshot.val().referrers)
+                    }
                 });
             })
         }
@@ -70,7 +116,7 @@ const actions = {
             })
         })
     },
-    updatePageReferrer({ commit }, url) {
+    updatePageReferrers({ commit }, url) {
         if (!url) {
             return;
         }
@@ -88,23 +134,3 @@ export default {
     mutations,
     actions
 }
-
-// {
-// 	pages: {
-// 		home: 0,
-// 		projects: 0,
-// 		designs: 0
-// 		contact: 0,
-// 	},
-// 	projects: [{
-// 		_id: 0
-// 	}],
-// 	assets: [{
-// 		_id: 0
-// 	}],
-// 	clicks {
-// 		github: 0,
-// 		linkedin: 0
-// 	},
-// refereral: []
-// }
