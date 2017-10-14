@@ -55,7 +55,14 @@ const actions = {
                 return (count || 0) + 1;
             })
         })
-    }
+    },
+    updateProjectViews({ commit }, projectId) {
+        firebaseAuthenticate().then(() => {
+            analyticsRef.child('projects').child(projectId).transaction(function(count) {
+                return (count || 0) + 1;
+            })
+        })
+    },
 }
 
 export default {

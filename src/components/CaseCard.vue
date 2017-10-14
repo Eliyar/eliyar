@@ -5,7 +5,7 @@
 		<div class="d-flex justify-content-between align-items-end">
 			<div class="name">{{ portfolio.project.name }}</div>
 			<div v-if="source === 'projects' && portfolio.assets" class="action" @click="onViewDesigns(portfolio)">View Designs</div>
-			<a v-if="source === 'designs'" :href="portfolio.project.url" target="_blank">
+			<a v-if="source === 'designs'" :href="portfolio.project.url" target="_blank" @click="updateProjectViews(portfolio.project.id)">
 				<div class="action">View Project</div>
 			</a>
 		</div>
@@ -19,6 +19,7 @@
 			onImageClick(portfolio) {
 				if (this.source === 'projects') {
 					window.open(portfolio.project.url);
+					this.updateProjectViews(portfolio.project.id);
 				} else if (this.source === 'designs') {
 					this.onViewDesigns(portfolio);
 				}
@@ -31,6 +32,10 @@
 						assetID: portfolio.assets[0].id
 					}
 				})
+				this.updateProjectViews(portfolio.project.id);
+			},
+			updateProjectViews(projectId) {
+				this.$store.dispatch('updateProjectViews', projectId);
 			}
 		}
 	}

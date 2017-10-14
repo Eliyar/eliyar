@@ -1,26 +1,26 @@
 const state = {
     portfolios: [{
         project: {
-            id: '9183944171',
+            id: 'R3bO6iky',
             name: 'Project A',
             url: 'https://google.ca',
             logo: 'logo_url',
             thumbnail: 'thumbnail_url',
         },
         assets: [{
-            id: '2352493415',
+            id: 'H1FxAsQl',
             url: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1507765101/Test%20Folder/Test_Image.jpg',
             caption: 'This is the caption',
             created_at: '2017-10-01'
         }, {
-            id: '6742181019',
+            id: 'pTInCTEj',
             url: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1507765101/Test%20Folder/Test_Image_2.jpg',
             caption: 'This is the other caption',
             created_at: '2017-10-01'
         }]
     }, {
         project: {
-            id: '3473679912',
+            id: 'N1cp5waz',
             name: 'Project B',
             url: 'https://youtube.ca',
             logo: 'logo_url',
@@ -28,7 +28,7 @@ const state = {
         }
     }, {
         project: {
-            id: '0469409122',
+            id: 'nEOjTaTX',
             name: 'Project C',
             url: 'https://twitter.com',
             logo: 'logo_url',
