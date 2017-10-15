@@ -2,8 +2,8 @@
 	<div class="slider-modal-wrapper" @keydown="onKeydown">
 		<div v-if="modalShown" class="slider-modal-header container-fluid d-flex justify-content-start align-items-center">
 			<div class="row">
-				<div class="logo-block d-none d-md-flex justify-content-center align-items-center">
-					<div class="logo"></div>
+				<div class="logo-block d-none d-lg-flex justify-content-center align-items-center">
+					<div class="logo" :style="{ 'background-image': portfolio.project.logoUrl ? 'url(' + portfolio.project.logoUrl + ')' : '' }"></div>
 					<div class="d-flex flex-column align-items-start">
 						<div>{{ portfolio.project.name }}</div>
 						<div class="view-count d-flex align-items-center">
@@ -12,9 +12,8 @@
 						</div>
 					</div>
 				</div>
-				<div class="caption-block col d-flex align-items-center"><span>{{ currentAsset.caption }}</span></div>
-				<div class="thumbnail-block col-12 col-lg d-flex justify-content-lg-end justify-content-start align-items-center">
-					<div class="thumbnail" :class="{ 'active' : asset.id === currentAsset.id }" v-for="(asset, index) in portfolio.assets" :key="index" @click="onThumbnailClick(asset)"></div>
+				<div class="thumbnail-block col d-flex justify-content-lg-end justify-content-start align-items-center flex-wrap">
+					<div class="thumbnail" :class="{ 'active' : asset.id === currentAsset.id }" :style="{ 'background-image': asset.thumbnailUrl ? 'url(' + asset.thumbnailUrl + ')' : '' }" v-for="(asset, index) in portfolio.assets" :key="index" @click="onThumbnailClick(asset)"></div>
 				</div>
 				<div class="close-block d-flex justify-content-center align-items-center" @click="onCloseModal">
 					<i class="material-icons">close</i>
@@ -24,14 +23,15 @@
 		<b-modal v-if="portfolio && currentAsset" id="slider-modal" ref="sliderModal" size="lg" class="d-flex" @shown="onModalShown" @hide="onModalHide">
 			<transition name="fade" tag="div" appear>
 				<div>
-					<div class="d-flex justify-content-start align-items-center">
+					<div class="d-flex justify-content-between align-items-center">
+						<div class="view-count margin-bottom-8">{{ currentAsset.caption }}</div>
 						<div class="view-count margin-bottom-8 d-flex align-items-center">
 							<i class="material-icons">visibility</i>
 							<span v-if="assetViews">{{ assetViews }}</span>
 						</div>
 					</div>
-					<a :href="currentAsset.url" target="_blank">
-						<img :src="currentAsset.url" alt="This is the caption" class="img-fluid">
+					<a :href="currentAsset.imageUrl" target="_blank">
+						<img :src="currentAsset.imageUrl" alt="This is the caption" class="img-fluid">
 					</a>
 				</div>
 			</transition>
@@ -111,7 +111,7 @@
 				this.$router.push({
 					name: 'Designs'
 				})
-
+	
 				const body = document.getElementsByTagName("BODY")[0];
 				body.classList.remove('modal-open');
 			},
@@ -206,14 +206,14 @@
 				background: white;
 				box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.07);
 				border-radius: 2px;
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
 			}
 			.thumbnail {
 				&-block {
 					height: 80px;
 					padding: 0 16px;
-					@media (max-width: 992px) {
-						order: 100;
-					}
 				}
 				width: 64px;
 				height: 44px;
@@ -221,7 +221,14 @@
 				background: white;
 				box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.07);
 				border-radius: 2px;
-				opacity: 0.7;
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				opacity: 0.4;
+				@media (max-width: 992px) {
+					width: 24px;
+					height: 18px;
+				}
 				&:last-child {
 					margin: 0;
 				}
@@ -251,10 +258,6 @@
 	.modal {
 		top: 0;
 		padding-top: calc(80px + 16px);
-		@media (max-width: 992px) {
-			order: 100;
-			padding-top: calc(80px * 2 + 16px);
-		}
 		&-header,
 		&-footer {
 			display: none;
