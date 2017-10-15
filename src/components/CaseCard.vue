@@ -1,13 +1,16 @@
 <template>
 	<div>
-		<div class="image-wrapper" @click="onImageClick(portfolio)">
+		<div class="image-wrapper" @click="onImageClick(portfolio)" :style="{ 'background-image': portfolio.project.thumbnailUrl ? 'url(' + portfolio.project.thumbnailUrl + ')' : '' }">
 			<div v-if="projectViews" class="view-count position-bottom-right d-flex align-items-center">
 				<i class="material-icons">visibility</i>
 				<span>{{ projectViews }}</span>
 			</div>
 		</div>
 		<div class="d-flex justify-content-between align-items-end">
-			<div class="name">{{ portfolio.project.name }}</div>
+			<div class="logo-block d-flex align-items-center">
+				<div v-if="portfolio.project.logoUrl" class="logo" :style="{ 'background-image': portfolio.project.logoUrl ? 'url(' + portfolio.project.logoUrl + ')' : '' }"></div>
+				<div class="name">{{ portfolio.project.name }}</div>
+			</div>
 			<div v-if="source === 'projects' && portfolio.assets" class="action" @click="onViewDesigns(portfolio)">View Designs</div>
 			<a v-if="source === 'designs'" :href="portfolio.project.url" target="_blank" @click="updateProjectViews(portfolio.project.id)">
 				<div class="action">View Project</div>
@@ -59,18 +62,37 @@
 			box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.07);
 			border-radius: 2px;
 			position: relative;
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
 			&:hover {
 				cursor: pointer;
 			}
 		}
 	}
 	
+	.logo {
+		&-block {
+				margin-top: 16px;
+		}
+		min-width: 24px;
+		min-height: 24px;
+		max-width: 24px;
+		max-height: 24px;
+		margin-right: 8px;
+		border-radius: 50%;
+		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.07);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	
 	.name {
-		margin-top: 16px;
 		font-weight: 500;
 	}
 	
 	.action {
+	
 		color: #757575;
 		font-size: 14px;
 		font-weight: 500;
