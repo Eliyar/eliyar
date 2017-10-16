@@ -2,7 +2,17 @@
 	<div class="slider-modal-wrapper" @keydown="onKeydown">
 		<div v-if="modalShown" class="slider-modal-header container-fluid d-flex justify-content-start align-items-center">
 			<div class="row">
-				<div class="logo-block d-none d-lg-flex justify-content-center align-items-center">
+				<a v-if="portfolio.project.url" class="logo-block d-none d-lg-flex justify-content-center align-items-center" :href="portfolio.project.url" target="_blank">
+					<div v-if="portfolio.project.logoUrl" class="logo" :style="{ 'background-image': portfolio.project.logoUrl ? 'url(' + portfolio.project.logoUrl + ')' : '' }"></div>
+					<div class="d-flex flex-column align-items-start">
+						<div>{{ portfolio.project.name }}</div>
+						<div class="view-count d-flex align-items-center">
+							<i class="material-icons">visibility</i>
+							<span>{{ projectViews }}</span>
+						</div>
+					</div>
+				</a>
+				<div v-if="!portfolio.project.url" class="logo-block d-none d-lg-flex justify-content-center align-items-center">
 					<div v-if="portfolio.project.logoUrl" class="logo" :style="{ 'background-image': portfolio.project.logoUrl ? 'url(' + portfolio.project.logoUrl + ')' : '' }"></div>
 					<div class="d-flex flex-column align-items-start">
 						<div>{{ portfolio.project.name }}</div>
@@ -215,6 +225,10 @@
 				&-block {
 					height: 80px;
 					padding: 0 16px;
+					color: white;
+					&:hover {
+						text-decoration: none;
+					}
 				}
 				min-width: 44px;
 				min-height: 44px;
