@@ -290,6 +290,52 @@ const state = {
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508119546/UDBckqPN/LBdREreA2lGhhjMP.jpg',
             caption: 'Suspendisse pulvinar augue ac venenatis'
         }]
+    }, {
+        project: {
+            id: 'zBjp8YII',
+            name: 'Control Hub',
+            url: null,
+            logoUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508120617/zBjp8YII/W3y41vSKGzG68kZF.svg',
+            thumbnailUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508120188/zBjp8YII/bqXzkapglYnRoeZq.jpg',
+            showProject: false,
+            showDesigns: true
+        },
+        assets: [{
+            id: 'OlQbQcTk',
+            imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508120188/zBjp8YII/bqXzkapglYnRoeZq.jpg',
+            thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508120188/zBjp8YII/bqXzkapglYnRoeZq.jpg',
+            caption: 'Suspendisse pulvinar augue ac venenatis'
+        }, {
+            id: 'oV84lFd7',
+            imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508120182/zBjp8YII/TBmxior4XI98b4EG.jpg',
+            thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508120182/zBjp8YII/TBmxior4XI98b4EG.jpg',
+            caption: 'Suspendisse pulvinar augue ac venenatis'
+        }, {
+            id: 'nFeaGY4V',
+            imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508120186/zBjp8YII/UAcYUzQ4MMNXVT8c.jpg',
+            thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508120186/zBjp8YII/UAcYUzQ4MMNXVT8c.jpg',
+            caption: 'Suspendisse pulvinar augue ac venenatis'
+        }, {
+            id: 'bcClmE9W',
+            imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508120185/zBjp8YII/bieJG0RhmbiM7OuA.jpg',
+            thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508120185/zBjp8YII/bieJG0RhmbiM7OuA.jpg',
+            caption: 'Suspendisse pulvinar augue ac venenatis'
+        }, {
+            id: 'qm6cupSs',
+            imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508120183/zBjp8YII/t5ZEEzVNZwxPoMhE.jpg',
+            thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508120183/zBjp8YII/t5ZEEzVNZwxPoMhE.jpg',
+            caption: 'Suspendisse pulvinar augue ac venenatis'
+        }, {
+            id: 'I3nCvkCS',
+            imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508120188/zBjp8YII/IucfEIaI4zMHpTEz.jpg',
+            thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508120188/zBjp8YII/IucfEIaI4zMHpTEz.jpg',
+            caption: 'Suspendisse pulvinar augue ac venenatis'
+        }, {
+            id: 'YEWxUt8s',
+            imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508120181/zBjp8YII/aN5EAHZX3nJPFI09.jpg',
+            thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508120181/zBjp8YII/aN5EAHZX3nJPFI09.jpg',
+            caption: 'Suspendisse pulvinar augue ac venenatis'
+        }]
     }]
 }
 
