@@ -179,8 +179,8 @@ const state = {
             caption: 'Suspendisse pulvinar augue ac venenatis'
         }, {
             id: 'T23Mh5se',
-            imageUrl: 'url____',
-            thumbnailUrl: 'url____',
+            imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508121821/qYQb30qJ/YccdZOaq2HoZjVcM.gif',
+            thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508121821/qYQb30qJ/YccdZOaq2HoZjVcM.jpg',
             caption: 'Suspendisse pulvinar augue ac venenatis'
         }]
     }, {
@@ -363,8 +363,8 @@ const state = {
             caption: 'Suspendisse pulvinar augue ac venenatis'
         }, {
             id: 'jWztS1V4',
-            imageUrl: 'url____',
-            thumbnailUrl: 'url____',
+            imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508123370/hfEatIdV/pE1u7sOG0RgaK4rM.gif',
+            thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508123370/hfEatIdV/pE1u7sOG0RgaK4rM.jpg',
             caption: 'Suspendisse pulvinar augue ac venenatis'
         }]
     }, {
