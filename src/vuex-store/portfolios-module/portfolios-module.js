@@ -3,9 +3,9 @@ const state = {
         project: {
             id: 'R3bO6iky',
             name: 'Socialseek Studio',
-            url: 'https://google.ca',
+            url: 'https://studio.socialseek.com',
             logoUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508027763/R3bO6iky/j44bvWMfSK84YPvJ.svg',
-            thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/v1508024884/R3bO6iky/I2EIxBiS7kEmnegs.png',
+            thumbnailUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508114223/R3bO6iky/Xo8QIds1ITcyBaXQ.jpg',
             showProject: true,
             showDesigns: true
         },
@@ -53,13 +53,59 @@ const state = {
     }, {
         project: {
             id: 'N1cp5waz',
-            name: 'Project B',
-            url: 'https://youtube.ca',
-            logoUrl: null,
-            thumbnailUrl: null,
+            name: 'Socialseek Web App',
+            url: 'https://socialseek.com/fashion',
+            logoUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508027763/R3bO6iky/j44bvWMfSK84YPvJ.svg',
+            thumbnailUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508115993/N1cp5waz/MroNArzDcia7tD9l.jpg',
             showProject: true,
             showDesigns: true
-        }
+        },
+        assets: [{
+            id: 'LcKZdxmJ',
+            imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508115993/N1cp5waz/MroNArzDcia7tD9l.jpg',
+            thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508115993/N1cp5waz/MroNArzDcia7tD9l.jpg',
+            caption: 'Suspendisse pulvinar augue ac venenatis'
+        }, {
+            id: 'zKGtbza7',
+            imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508115824/N1cp5waz/Xyboq6cUJlMndP4P.png',
+            thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508115824/N1cp5waz/Xyboq6cUJlMndP4P.png',
+            caption: 'Suspendisse pulvinar augue ac venenatis'
+        }, {
+            id: 'uXU5URtB',
+            imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508115818/N1cp5waz/VqsPt1q4hyQ6QQgA.png',
+            thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508115818/N1cp5waz/VqsPt1q4hyQ6QQgA.png',
+            caption: 'Suspendisse pulvinar augue ac venenatis'
+        }, {
+            id: 'NlpNx0gI',
+            imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508115810/N1cp5waz/m5QP1pWK3QnKTwla.png',
+            thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508115810/N1cp5waz/m5QP1pWK3QnKTwla.png',
+            caption: 'Suspendisse pulvinar augue ac venenatis'
+        }, {
+            id: 'sKicUjlo',
+            imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508115802/N1cp5waz/hzjQE96fcTW6HGyf.png',
+            thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508115802/N1cp5waz/hzjQE96fcTW6HGyf.png',
+            caption: 'Suspendisse pulvinar augue ac venenatis'
+        }, {
+            id: 'KXq9pHnR',
+            imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508115801/N1cp5waz/Lz0gaPjybvJN06w2.jpg',
+            thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508115801/N1cp5waz/Lz0gaPjybvJN06w2.jpg',
+            caption: 'Suspendisse pulvinar augue ac venenatis'
+        }, {
+            id: 't8swEVtW',
+            imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508115822/N1cp5waz/PTO4i9QB8XzJo11t.jpg',
+            thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508115822/N1cp5waz/PTO4i9QB8XzJo11t.jpg',
+            caption: 'Suspendisse pulvinar augue ac venenatis'
+        }, {
+            id: 'TORGWiTG',
+            imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508115810/N1cp5waz/W5wIX0ixPN9GbQBy.jpg',
+            thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508115810/N1cp5waz/W5wIX0ixPN9GbQBy.jpg',
+            caption: 'Suspendisse pulvinar augue ac venenatis'
+        }, {
+            id: 'JPObig1h',
+            imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508115791/N1cp5waz/MM97M4gsMCNQsV1d.png',
+            thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508115791/N1cp5waz/MM97M4gsMCNQsV1d.png',
+            caption: 'Suspendisse pulvinar augue ac venenatis'
+        }]
     }, {
         project: {
             id: 'nEOjTaTX',
