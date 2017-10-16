@@ -4,7 +4,7 @@
 			<app-navigation :page="'Designs'"></app-navigation>
 			<div class="cards-wrapper container-fluid">
 				<transition-group name="staggered-fade" class="row" tag="div" :css="false" @before-enter="beforeEnter" @enter="enter" @leave="leave" appear>
-					<div v-if="portfolio.assets" class="col-12 col-lg-4 card-wrapper" v-for="(portfolio, index) in portfolios" :key="index" :data-index="index">
+					<div v-if="portfolio.project.showDesigns" class="col-12 col-lg-4 card-wrapper" v-for="(portfolio, index) in portfolios" :key="index" :data-index="index">
 						<app-case-card :source="'designs'" :portfolio="portfolio"></app-case-card>
 					</div>
 				</transition-group>
