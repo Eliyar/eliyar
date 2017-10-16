@@ -9,7 +9,7 @@
 		name: 'app',
 		mounted() {
 			this.$store.dispatch('fetchAnalytics')
-			// this.$store.dispatch('updatePageReferrers', window.document.referrer || null)
+			this.$store.dispatch('updatePageReferrers', window.document.referrer || null)
 		}
 	}
 </script>

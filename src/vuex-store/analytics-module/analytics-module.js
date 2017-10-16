@@ -117,13 +117,16 @@ const actions = {
         })
     },
     updatePageReferrers({ commit }, url) {
-        if (!url) {
+        if (!url || url && (url.toString().toLowerCase().includes('localhost') || url.toString().toLowerCase().includes('127.0.0.1'))) {
             return;
         }
 
+        url = (new URL(url).hostname).split('.').join('-');
+
         firebaseAuthenticate().then(() => {
-            const key = analyticsRef.child('referrers').push().key;
-            analyticsRef.child('referrers').child(key).update({ url: url });
+            analyticsRef.child('referrers').child(url).transaction(function(count) {
+                return (count || 0) + 1;
+            })
         })
     }
 }
