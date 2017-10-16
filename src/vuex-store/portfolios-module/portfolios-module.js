@@ -155,13 +155,34 @@ const state = {
     }, {
         project: {
             id: 'qYQb30qJ',
-            name: 'Project D',
-            url: 'https://facebook.com',
-            logoUrl: null,
-            thumbnailUrl: null,
+            name: 'Socialseek Business',
+            url: 'https://business.socialseek.com',
+            logoUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508027763/R3bO6iky/j44bvWMfSK84YPvJ.svg',
+            thumbnailUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508117472/qYQb30qJ/KRVNy1Ini3LSQVeH.jpg',
             showProject: true,
             showDesigns: true
-        }
+        },
+        assets: [{
+            id: 'UBEGcBpX',
+            imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508117472/qYQb30qJ/KRVNy1Ini3LSQVeH.jpg',
+            thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508117472/qYQb30qJ/KRVNy1Ini3LSQVeH.jpg',
+            caption: 'Suspendisse pulvinar augue ac venenatis'
+        }, {
+            id: 'Ku7H5ZDf',
+            imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508117472/qYQb30qJ/J0ta3DUEKKa591jT.jpg',
+            thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508117472/qYQb30qJ/J0ta3DUEKKa591jT.jpg',
+            caption: 'Suspendisse pulvinar augue ac venenatis'
+        }, {
+            id: 'Zl1tmDbF',
+            imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508117462/qYQb30qJ/FNBRosoVmJTov2BL.jpg',
+            thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508117462/qYQb30qJ/FNBRosoVmJTov2BL.jpg',
+            caption: 'Suspendisse pulvinar augue ac venenatis'
+        }, {
+            id: 'T23Mh5se',
+            imageUrl: 'url____',
+            thumbnailUrl: 'url____',
+            caption: 'Suspendisse pulvinar augue ac venenatis'
+        }]
     }]
 }
 

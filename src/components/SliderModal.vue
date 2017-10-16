@@ -31,7 +31,7 @@
 						</div>
 					</div>
 					<a :href="currentAsset.imageUrl" target="_blank">
-						<img :src="currentAsset.imageUrl" alt="This is the caption" class="img-fluid">
+						<img :src="currentAsset.imageUrl" :alt="currentAsset.caption" class="img-fluid">
 					</a>
 				</div>
 			</transition>
