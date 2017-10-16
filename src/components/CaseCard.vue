@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<div class="image-wrapper" @click="onImageClick(portfolio)" :style="{ 'background-image': portfolio.project.thumbnailUrl ? 'url(' + portfolio.project.thumbnailUrl + ')' : '' }">
+		<div class="image-wrapper" @click="onImageClick(portfolio)" :style="{ 'background-image': source === 'projects' ? 'url(' + portfolio.project.thumbnailUrl + ')' : 'url(' + portfolio.project.designThumbnailUrl + ')' }">
 			<div v-if="source === 'designs'" class="sketch-logo" style="background:url(https://res.cloudinary.com/dspnhpwnp/image/upload/v1508122428/cJ9QJmkB/sketch-logo.png) center / cover no-repeat;"></div>
 			<div v-if="projectViews" class="view-count color-black position-bottom-right d-flex align-items-center">
 				<i class="material-icons">visibility</i>

@@ -20,10 +20,10 @@
 				</div>
 			</div>
 		</div>
-		<div class="slider-modal-left d-flex justify-content-center align-items-center" @click="previousAsset">
+		<div v-if="modalShown" class="slider-modal-left d-flex justify-content-center align-items-center" @click="previousAsset">
 			<i class="material-icons">chevron_left</i>
 		</div>
-		<div class="slider-modal-right d-flex justify-content-center align-items-center" @click="nextAsset">
+		<div v-if="modalShown" class="slider-modal-right d-flex justify-content-center align-items-center" @click="nextAsset">
 			<i class="material-icons">chevron_right</i>
 		</div>
 		<b-modal v-if="portfolio && currentAsset" id="slider-modal" ref="sliderModal" size="lg" class="d-flex" @shown="onModalShown" @hide="onModalHide">

@@ -5,7 +5,8 @@ const state = {
             name: 'Socialseek Studio',
             url: 'https://studio.socialseek.com',
             logoUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508027763/R3bO6iky/j44bvWMfSK84YPvJ.svg',
-            thumbnailUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508114223/R3bO6iky/Xo8QIds1ITcyBaXQ.jpg',
+            thumbnailUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/c_scale,w_500/v1508114223/R3bO6iky/Xo8QIds1ITcyBaXQ.jpg',
+            designThumbnailUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/c_scale,w_500/v1508024884/R3bO6iky/I2EIxBiS7kEmnegs.png',
             showProject: true,
             showDesigns: true
         },
@@ -56,7 +57,8 @@ const state = {
             name: 'Socialseek Web App',
             url: 'https://socialseek.com/fashion',
             logoUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508027763/R3bO6iky/j44bvWMfSK84YPvJ.svg',
-            thumbnailUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508115993/N1cp5waz/MroNArzDcia7tD9l.jpg',
+            thumbnailUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/c_scale,w_500/v1508115993/N1cp5waz/MroNArzDcia7tD9l.jpg',
+            designThumbnailUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/c_scale,w_500/v1508115818/N1cp5waz/VqsPt1q4hyQ6QQgA.png',
             showProject: true,
             showDesigns: true
         },
@@ -112,7 +114,8 @@ const state = {
             name: 'Socialseek iOS App',
             url: 'https://itunes.apple.com/us/app/socialseek-discover-your-passion/id1197933951',
             logoUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508027763/R3bO6iky/j44bvWMfSK84YPvJ.svg',
-            thumbnailUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508116643/nEOjTaTX/B9B479ernRpZHC22.jpg',
+            thumbnailUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/c_scale,w_500/v1508116643/nEOjTaTX/B9B479ernRpZHC22.jpg',
+            designThumbnailUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/c_scale,w_500/v1508116649/nEOjTaTX/V7YMq17HCRU3oQG3.jpg',
             showProject: false,
             showDesigns: true
         },
@@ -158,7 +161,8 @@ const state = {
             name: 'Socialseek Business',
             url: 'https://business.socialseek.com',
             logoUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508027763/R3bO6iky/j44bvWMfSK84YPvJ.svg',
-            thumbnailUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508117472/qYQb30qJ/KRVNy1Ini3LSQVeH.jpg',
+            thumbnailUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/c_scale,w_500/v1508117472/qYQb30qJ/KRVNy1Ini3LSQVeH.jpg',
+            designThumbnailUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/c_scale,w_500/v1508117472/qYQb30qJ/J0ta3DUEKKa591jT.jpg',
             showProject: true,
             showDesigns: true
         },
@@ -189,7 +193,8 @@ const state = {
             name: 'Brightspark Website',
             url: 'https://brightspark.com',
             logoUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508119416/kFV0iEjk/eo5oJcEfpz1BnaOO.svg',
-            thumbnailUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508117985/kFV0iEjk/i04BBs1ipBLqaMks.jpg',
+            thumbnailUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/c_scale,w_500/v1508117985/kFV0iEjk/i04BBs1ipBLqaMks.jpg',
+            designThumbnailUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/c_scale,w_500/v1508117990/kFV0iEjk/ECXwkiQSqfGDgVp8.jpg',
             showProject: true,
             showDesigns: true
         },
@@ -230,7 +235,8 @@ const state = {
             name: 'Brightspark Platform',
             url: 'http://spark.brightspark.com',
             logoUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508119416/kFV0iEjk/eo5oJcEfpz1BnaOO.svg',
-            thumbnailUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508119604/UDBckqPN/bRgq4FWZt0YIp1I4.jpg',
+            thumbnailUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/c_scale,w_500/v1508119604/UDBckqPN/bRgq4FWZt0YIp1I4.jpg',
+            designThumbnailUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/c_scale,w_500/v1508119546/UDBckqPN/LBdREreA2lGhhjMP.jpg',
             showProject: true,
             showDesigns: true
         },
@@ -296,7 +302,8 @@ const state = {
             name: 'Control Hub',
             url: null,
             logoUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508120617/zBjp8YII/W3y41vSKGzG68kZF.svg',
-            thumbnailUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508120188/zBjp8YII/bqXzkapglYnRoeZq.jpg',
+            thumbnailUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/c_scale,w_500/v1508120188/zBjp8YII/bqXzkapglYnRoeZq.jpg',
+            designThumbnailUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/c_scale,w_500/v1508120182/zBjp8YII/TBmxior4XI98b4EG.jpg',
             showProject: false,
             showDesigns: true
         },
@@ -342,7 +349,8 @@ const state = {
             name: 'Chat App',
             url: null,
             logoUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508120910/hfEatIdV/pqTr16Qhi22O1cqk.svg',
-            thumbnailUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508120930/hfEatIdV/mwFioGsHCpeRcMNE.png',
+            thumbnailUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/c_scale,w_500/v1508120929/hfEatIdV/HTkcUnAVTQJnXVnE.png',
+            designThumbnailUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/c_scale,w_500/v1508120929/hfEatIdV/HTkcUnAVTQJnXVnE.png',
             showProject: false,
             showDesigns: true
         },
@@ -373,7 +381,8 @@ const state = {
             name: 'Miscellaneous',
             url: null,
             logoUrl: null,
-            thumbnailUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508121521/cJ9QJmkB/cGInHHUGRCknRCP5.jpg',
+            thumbnailUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/c_scale,w_500/v1508121521/cJ9QJmkB/cGInHHUGRCknRCP5.jpg',
+            designThumbnailUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/c_scale,w_500/v1508121521/cJ9QJmkB/cGInHHUGRCknRCP5.jpg',
             showProject: false,
             showDesigns: true
         },
