@@ -12,7 +12,7 @@
 				<div class="name">{{ portfolio.project.name }}</div>
 			</div>
 			<div v-if="source === 'projects' && portfolio.assets" class="action" @click="onViewDesigns(portfolio)">View Designs</div>
-			<a v-if="source === 'designs'" :href="portfolio.project.url" target="_blank" @click="updateProjectViews(portfolio.project.id)">
+			<a v-if="source === 'designs' && portfolio.project.showProject" :href="portfolio.project.url" target="_blank" @click="updateProjectViews(portfolio.project.id)">
 				<div class="action">View Project</div>
 			</a>
 		</div>

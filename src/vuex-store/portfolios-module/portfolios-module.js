@@ -336,6 +336,37 @@ const state = {
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508120181/zBjp8YII/aN5EAHZX3nJPFI09.jpg',
             caption: 'Suspendisse pulvinar augue ac venenatis'
         }]
+    }, {
+        project: {
+            id: 'hfEatIdV',
+            name: 'Chat App',
+            url: null,
+            logoUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508120910/hfEatIdV/pqTr16Qhi22O1cqk.svg',
+            thumbnailUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508120930/hfEatIdV/mwFioGsHCpeRcMNE.png',
+            showProject: false,
+            showDesigns: true
+        },
+        assets: [{
+            id: 'XVYi2XNd',
+            imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508120930/hfEatIdV/mwFioGsHCpeRcMNE.png',
+            thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508120930/hfEatIdV/mwFioGsHCpeRcMNE.png',
+            caption: 'Suspendisse pulvinar augue ac venenatis'
+        }, {
+            id: 'HGwopc5j',
+            imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508120929/hfEatIdV/HTkcUnAVTQJnXVnE.png',
+            thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508120929/hfEatIdV/HTkcUnAVTQJnXVnE.png',
+            caption: 'Suspendisse pulvinar augue ac venenatis'
+        }, {
+            id: 'F96gLYkC',
+            imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508120927/hfEatIdV/bE7KsDclZ2YA2FMz.png',
+            thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508120927/hfEatIdV/bE7KsDclZ2YA2FMz.png',
+            caption: 'Suspendisse pulvinar augue ac venenatis'
+        }, {
+            id: 'jWztS1V4',
+            imageUrl: 'url____',
+            thumbnailUrl: 'url____',
+            caption: 'Suspendisse pulvinar augue ac venenatis'
+        }]
     }]
 }
 
