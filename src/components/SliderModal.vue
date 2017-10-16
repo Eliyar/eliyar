@@ -20,6 +20,12 @@
 				</div>
 			</div>
 		</div>
+		<div class="slider-modal-left d-flex justify-content-center align-items-center" @click="previousAsset">
+			<i class="material-icons">chevron_left</i>
+		</div>
+		<div class="slider-modal-right d-flex justify-content-center align-items-center" @click="nextAsset">
+			<i class="material-icons">chevron_right</i>
+		</div>
 		<b-modal v-if="portfolio && currentAsset" id="slider-modal" ref="sliderModal" size="lg" class="d-flex" @shown="onModalShown" @hide="onModalHide">
 			<transition name="fade" tag="div" appear>
 				<div>
@@ -133,37 +139,47 @@
 			updateAssetViews(payload) {
 				this.$store.dispatch('updateAssetViews', payload);
 			},
+			nextAsset() {
+				let asset;
+	
+				const index = this.portfolio.assets.indexOf(this.portfolio.assets.find(iterator => {
+					return iterator.id === this.currentAsset.id
+				})) + 1;
+	
+				if (index < this.portfolio.assets.length) {
+					asset = this.portfolio.assets[index]
+				} else {
+					asset = this.portfolio.assets[0]
+				}
+	
+				this.onThumbnailClick(asset);
+			},
+			previousAsset() {
+				let asset;
+	
+				const index = this.portfolio.assets.indexOf(this.portfolio.assets.find(iterator => {
+					return iterator.id === this.currentAsset.id
+				})) - 1;
+	
+				if (index < 0) {
+					asset = this.portfolio.assets[this.portfolio.assets.length - 1]
+				} else {
+					asset = this.portfolio.assets[index]
+				}
+	
+				this.onThumbnailClick(asset);
+			},
 			onKeydown(event) {
 				const keyCode = event.keyCode;
 				if (keyCode !== 39 && keyCode !== 37) {
 					return;
 				}
 	
-				let asset, index;
-	
 				if (keyCode === 39) {
-					index = this.portfolio.assets.indexOf(this.portfolio.assets.find(iterator => {
-						return iterator.id === this.currentAsset.id
-					})) + 1;
-	
-					if (index < this.portfolio.assets.length) {
-						asset = this.portfolio.assets[index]
-					} else {
-						asset = this.portfolio.assets[0]
-					}
+					this.nextAsset();
 				} else if (keyCode === 37) {
-					index = this.portfolio.assets.indexOf(this.portfolio.assets.find(iterator => {
-						return iterator.id === this.currentAsset.id
-					})) - 1;
-	
-					if (index < 0) {
-						asset = this.portfolio.assets[this.portfolio.assets.length - 1]
-					} else {
-						asset = this.portfolio.assets[index]
-					}
+					this.previousAsset();
 				}
-	
-				this.onThumbnailClick(asset);
 			}
 		},
 		mounted() {
@@ -251,6 +267,42 @@
 				&:hover {
 					cursor: pointer;
 				}
+			}
+		}
+		&-left {
+			position: fixed;
+			top: 50%;
+			left: 0;
+			z-index: 10000;
+			background: white;
+			color: black;
+			width: 34px;
+			height: 34px;
+			opacity: 0.5;
+			border-top-right-radius: 2px;
+			border-bottom-right-radius: 2px;
+			&:hover {
+				cursor: pointer;
+				transition: opacity 0.5s ease;
+				opacity: 1;
+			}
+		}
+		&-right {
+			position: fixed;
+			top: 50%;
+			right: 0;
+			z-index: 10000;
+			background: white;
+			color: black;
+			width: 34px;
+			height: 34px;
+			opacity: 0.5;
+			border-top-left-radius: 2px;
+			border-bottom-left-radius: 2px;
+			&:hover {
+				cursor: pointer;
+				transition: opacity 0.5s ease;
+				opacity: 1;
 			}
 		}
 	}
