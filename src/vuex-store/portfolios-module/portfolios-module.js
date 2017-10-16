@@ -367,6 +367,42 @@ const state = {
             thumbnailUrl: 'url____',
             caption: 'Suspendisse pulvinar augue ac venenatis'
         }]
+    }, {
+        project: {
+            id: 'cJ9QJmkB',
+            name: 'Miscellaneous',
+            url: null,
+            logoUrl: null,
+            thumbnailUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508121521/cJ9QJmkB/cGInHHUGRCknRCP5.jpg',
+            showProject: false,
+            showDesigns: true
+        },
+        assets: [{
+            id: 'JXbAiO9T',
+            imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508121521/cJ9QJmkB/cGInHHUGRCknRCP5.jpg',
+            thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508121521/cJ9QJmkB/cGInHHUGRCknRCP5.jpg',
+            caption: 'Suspendisse pulvinar augue ac venenatis'
+        }, {
+            id: 'rFv5re7H',
+            imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508121208/cJ9QJmkB/MdRSQMSxZVo62R2P.jpg',
+            thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508121208/cJ9QJmkB/MdRSQMSxZVo62R2P.jpg',
+            caption: 'Suspendisse pulvinar augue ac venenatis'
+        }, {
+            id: 'ji6oXLMd',
+            imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508121208/cJ9QJmkB/OMRVW04ahxePEiiD.jpg',
+            thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508121208/cJ9QJmkB/OMRVW04ahxePEiiD.jpg',
+            caption: 'Suspendisse pulvinar augue ac venenatis'
+        }, {
+            id: 'qw5VPugO',
+            imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508121206/cJ9QJmkB/kBiKTLYis1OmSGrJ.jpg',
+            thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508121206/cJ9QJmkB/kBiKTLYis1OmSGrJ.jpg',
+            caption: 'Suspendisse pulvinar augue ac venenatis'
+        }, {
+            id: 'tQA9ray8',
+            imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508121206/cJ9QJmkB/wHLVKpOi5sgAOJ1e.jpg',
+            thumbnailUrl: 'urlhttp://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508121206/cJ9QJmkB/wHLVKpOi5sgAOJ1e.jpg____',
+            caption: 'Suspendisse pulvinar augue ac venenatis'
+        }]
     }]
 }
 

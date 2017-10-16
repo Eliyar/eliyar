@@ -3,7 +3,7 @@
 		<div v-if="modalShown" class="slider-modal-header container-fluid d-flex justify-content-start align-items-center">
 			<div class="row">
 				<div class="logo-block d-none d-lg-flex justify-content-center align-items-center">
-					<div class="logo" :style="{ 'background-image': portfolio.project.logoUrl ? 'url(' + portfolio.project.logoUrl + ')' : '' }"></div>
+					<div v-if="portfolio.project.logoUrl" class="logo" :style="{ 'background-image': portfolio.project.logoUrl ? 'url(' + portfolio.project.logoUrl + ')' : '' }"></div>
 					<div class="d-flex flex-column align-items-start">
 						<div>{{ portfolio.project.name }}</div>
 						<div class="view-count d-flex align-items-center">
