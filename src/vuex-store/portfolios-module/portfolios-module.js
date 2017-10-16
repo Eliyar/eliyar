@@ -183,6 +183,47 @@ const state = {
             thumbnailUrl: 'url____',
             caption: 'Suspendisse pulvinar augue ac venenatis'
         }]
+    }, {
+        project: {
+            id: 'kFV0iEjk',
+            name: 'Brightspark Website',
+            url: 'https://brightspark.com',
+            logoUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508119416/kFV0iEjk/eo5oJcEfpz1BnaOO.svg',
+            thumbnailUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508117985/kFV0iEjk/i04BBs1ipBLqaMks.jpg',
+            showProject: true,
+            showDesigns: true
+        },
+        assets: [{
+            id: 'mnHQXa4y',
+            imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508117985/kFV0iEjk/i04BBs1ipBLqaMks.jpg',
+            thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508117985/kFV0iEjk/i04BBs1ipBLqaMks.jpg',
+            caption: 'Suspendisse pulvinar augue ac venenatis'
+        }, {
+            id: 'fXsUTZ5N',
+            imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508117993/kFV0iEjk/0MxRTzpKdZ1UzwNC.jpg',
+            thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508117993/kFV0iEjk/0MxRTzpKdZ1UzwNC.jpg',
+            caption: 'Suspendisse pulvinar augue ac venenatis'
+        }, {
+            id: 'ieGZgWD1',
+            imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508117990/kFV0iEjk/ECXwkiQSqfGDgVp8.jpg',
+            thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508117990/kFV0iEjk/ECXwkiQSqfGDgVp8.jpg',
+            caption: 'Suspendisse pulvinar augue ac venenatis'
+        }, {
+            id: 'JaO55i9E',
+            imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508117989/kFV0iEjk/w104fA4VCrfCgni0.png',
+            thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508117989/kFV0iEjk/w104fA4VCrfCgni0.png',
+            caption: 'Suspendisse pulvinar augue ac venenatis'
+        }, {
+            id: 'shQPlcvP',
+            imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508118426/kFV0iEjk/Red3P7dRmum2u4tM.png',
+            thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508118426/kFV0iEjk/Red3P7dRmum2u4tM.png',
+            caption: 'Suspendisse pulvinar augue ac venenatis'
+        }, {
+            id: 'GJdRFIoA',
+            imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508117985/kFV0iEjk/NTdf9NiSUz7obL2a.png',
+            thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508117985/kFV0iEjk/NTdf9NiSUz7obL2a.png',
+            caption: 'Suspendisse pulvinar augue ac venenatis'
+        }]
     }]
 }
 
