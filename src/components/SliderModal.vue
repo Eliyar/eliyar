@@ -23,8 +23,8 @@
 		<b-modal v-if="portfolio && currentAsset" id="slider-modal" ref="sliderModal" size="lg" class="d-flex" @shown="onModalShown" @hide="onModalHide">
 			<transition name="fade" tag="div" appear>
 				<div>
-					<div class="d-flex justify-content-between align-items-center">
-						<div class="view-count margin-bottom-8">{{ currentAsset.caption }}</div>
+					<div class="d-flex justify-content-between align-items-end">
+						<div class="view-count margin-bottom-8 text-left"><span v-if="currentAsset.caption">{{ currentAsset.caption }}</span></div>
 						<div class="view-count margin-bottom-8 d-flex align-items-center">
 							<i class="material-icons">visibility</i>
 							<span v-if="assetViews">{{ assetViews }}</span>

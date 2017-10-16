@@ -13,42 +13,42 @@ const state = {
             id: 'H1FxAsQl',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508114223/R3bO6iky/Xo8QIds1ITcyBaXQ.jpg',
             thumbnailUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/c_limit,h_100,w_150/v1508114223/R3bO6iky/Xo8QIds1ITcyBaXQ.jpg',
-            caption: 'Sign In to Socialseek Studio'
+            caption: 'Sign In to Socialseek Studio.'
         }, {
             id: 'pTInCTEj',
             imageUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/v1508024884/R3bO6iky/I2EIxBiS7kEmnegs.png',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508024884/R3bO6iky/I2EIxBiS7kEmnegs.png',
-            caption: 'This is the other caption'
+            caption: 'Home page showing posts created under Health & Fitness community.'
         }, {
             id: 'AMzwICyC',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508024877/R3bO6iky/GvhlQJLsaY1Nj5zE.png',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508024877/R3bO6iky/GvhlQJLsaY1Nj5zE.png',
-            caption: 'Content builder'
+            caption: 'Creating a new post with title, summary, call to action with product link, images, attributed influencer and community.'
         }, {
             id: 'iG4hfgqI',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508024883/R3bO6iky/WXcjS2eTVDUJLf2E.png',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508024883/R3bO6iky/WXcjS2eTVDUJLf2E.png',
-            caption: 'Media catalogue'
+            caption: 'Media Catalogue: connect Facebook, Twitter, Instagram, or YouTube account to re-use posts, or search for other posts with hashtag/keyword.'
         }, {
             id: 'YBhOGcQX',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508024878/R3bO6iky/ETp10t7xHi3qnpY2.png',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508024878/R3bO6iky/ETp10t7xHi3qnpY2.png',
-            caption: 'Products catalogue'
+            caption: 'Products Catalogue: connect Shopify account to associate creation-post with a product link.'
         }, {
             id: 'B73q7EVL',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508024877/R3bO6iky/cQIvEy7PSurBbxLa.png',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508024877/R3bO6iky/cQIvEy7PSurBbxLa.png',
-            caption: 'Analytics'
+            caption: 'Analytics for brand, community, and post.'
         }, {
             id: 'NGkGWJo8',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508029958/R3bO6iky/kpsgCCJ2XzX5gCUh.png',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508029958/R3bO6iky/kpsgCCJ2XzX5gCUh.png',
-            caption: 'Billing Page'
+            caption: 'Billing page integrating Stripe.'
         }, {
             id: 'YZTnAI1J',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508024875/R3bO6iky/f7eZxmTeGcYk68YK.png',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508024875/R3bO6iky/f7eZxmTeGcYk68YK.png',
-            caption: 'Team Page'
+            caption: 'Team page'
         }]
     }, {
         project: {
@@ -64,47 +64,47 @@ const state = {
             id: 'LcKZdxmJ',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508115993/N1cp5waz/MroNArzDcia7tD9l.jpg',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508115993/N1cp5waz/MroNArzDcia7tD9l.jpg',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: 'Socialseek.com - Discover your Passion'
         }, {
             id: 'zKGtbza7',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508115824/N1cp5waz/Xyboq6cUJlMndP4P.png',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508115824/N1cp5waz/Xyboq6cUJlMndP4P.png',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: 'Home page showing latest posts.'
         }, {
             id: 'uXU5URtB',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508115818/N1cp5waz/VqsPt1q4hyQ6QQgA.png',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508115818/N1cp5waz/VqsPt1q4hyQ6QQgA.png',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: 'Modal showing post content, comments and engagement.'
         }, {
             id: 'NlpNx0gI',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508115810/N1cp5waz/m5QP1pWK3QnKTwla.png',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508115810/N1cp5waz/m5QP1pWK3QnKTwla.png',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: 'Home page alternative design.'
         }, {
             id: 'sKicUjlo',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508115802/N1cp5waz/hzjQE96fcTW6HGyf.png',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508115802/N1cp5waz/hzjQE96fcTW6HGyf.png',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: 'Home page alternative design.'
         }, {
             id: 'KXq9pHnR',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508115801/N1cp5waz/Lz0gaPjybvJN06w2.jpg',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508115801/N1cp5waz/Lz0gaPjybvJN06w2.jpg',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: 'Integrating Socialseek Widget in a brand product page.'
         }, {
             id: 't8swEVtW',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508115822/N1cp5waz/PTO4i9QB8XzJo11t.jpg',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508115822/N1cp5waz/PTO4i9QB8XzJo11t.jpg',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: 'Integrating Socialseek Widget in a brand community page.'
         }, {
             id: 'TORGWiTG',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508115810/N1cp5waz/W5wIX0ixPN9GbQBy.jpg',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508115810/N1cp5waz/W5wIX0ixPN9GbQBy.jpg',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: 'Marketing pages designs.'
         }, {
             id: 'JPObig1h',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508115791/N1cp5waz/MM97M4gsMCNQsV1d.png',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508115791/N1cp5waz/MM97M4gsMCNQsV1d.png',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: 'Socialseek logo'
         }]
     }, {
         project: {
@@ -120,37 +120,37 @@ const state = {
             id: 'HsjK83JY',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508116643/nEOjTaTX/B9B479ernRpZHC22.jpg',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508116643/nEOjTaTX/B9B479ernRpZHC22.jpg',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: 'Welcome to Socialseek - Discover your Passion'
         }, {
             id: 'bv7VIgOp',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508116649/nEOjTaTX/R7IjLd0ZfusKQZ6v.jpg',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508116649/nEOjTaTX/R7IjLd0ZfusKQZ6v.jpg',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: 'Home screen showing latest posts.'
         }, {
             id: 'OjvrZ4yZ',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508116649/nEOjTaTX/V7YMq17HCRU3oQG3.jpg',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508116649/nEOjTaTX/V7YMq17HCRU3oQG3.jpg',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: 'Screens'
         }, {
             id: 'SsK0SOO7',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508116642/nEOjTaTX/WmmDUrYxZxogC0MW.jpg',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508116642/nEOjTaTX/WmmDUrYxZxogC0MW.jpg',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: 'App Store screenshots'
         }, {
             id: 'Ia5Ex3mj',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508116638/nEOjTaTX/tgxJ9rzHzniN8SXu.png',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508116638/nEOjTaTX/tgxJ9rzHzniN8SXu.png',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: 'Blueprint for implementing Standard post type.'
         }, {
             id: 'JJeFKGtI',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508116638/nEOjTaTX/isJtQf5YyAzEAwRG.png',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508116638/nEOjTaTX/isJtQf5YyAzEAwRG.png',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: 'Socialseek App blueprints'
         }, {
             id: 'UaoMvXjr',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508116637/nEOjTaTX/BcODXpxJZ3qEGLm0.png',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508116637/nEOjTaTX/BcODXpxJZ3qEGLm0.png',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: 'Empty state clip art'
         }]
     }, {
         project: {
@@ -166,22 +166,22 @@ const state = {
             id: 'UBEGcBpX',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508117472/qYQb30qJ/KRVNy1Ini3LSQVeH.jpg',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508117472/qYQb30qJ/KRVNy1Ini3LSQVeH.jpg',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: 'Socialseek Business - Discover how Socialseek solutions seamlessly blend content, products, and actions to drive brand love and revenue.'
         }, {
             id: 'Ku7H5ZDf',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508117472/qYQb30qJ/J0ta3DUEKKa591jT.jpg',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508117472/qYQb30qJ/J0ta3DUEKKa591jT.jpg',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: 'Marketing pages'
         }, {
             id: 'Zl1tmDbF',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508117462/qYQb30qJ/FNBRosoVmJTov2BL.jpg',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508117462/qYQb30qJ/FNBRosoVmJTov2BL.jpg',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: 'Designs in Sketch'
         }, {
             id: 'T23Mh5se',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508121821/qYQb30qJ/YccdZOaq2HoZjVcM.gif',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508121821/qYQb30qJ/YccdZOaq2HoZjVcM.jpg',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: 'Demo video showing: content creation with Socialseek Studio (old version), sharing post to Twitter, viewing post in Twitter feed, navigating to Socialseek Web App (old version), clicking on shop CTA to land on a demo brand\'s product page for purchase, and analytics.'
         }]
     }, {
         project: {
@@ -197,32 +197,32 @@ const state = {
             id: 'mnHQXa4y',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508117985/kFV0iEjk/i04BBs1ipBLqaMks.jpg',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508117985/kFV0iEjk/i04BBs1ipBLqaMks.jpg',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: null
         }, {
             id: 'fXsUTZ5N',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508117993/kFV0iEjk/0MxRTzpKdZ1UzwNC.jpg',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508117993/kFV0iEjk/0MxRTzpKdZ1UzwNC.jpg',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: 'Home page design'
         }, {
             id: 'ieGZgWD1',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508117990/kFV0iEjk/ECXwkiQSqfGDgVp8.jpg',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508117990/kFV0iEjk/ECXwkiQSqfGDgVp8.jpg',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: 'Designs for other pages'
         }, {
             id: 'JaO55i9E',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508117989/kFV0iEjk/w104fA4VCrfCgni0.png',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508117989/kFV0iEjk/w104fA4VCrfCgni0.png',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: 'Style guidelines for email templates'
         }, {
             id: 'shQPlcvP',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508118426/kFV0iEjk/Red3P7dRmum2u4tM.png',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508118426/kFV0iEjk/Red3P7dRmum2u4tM.png',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: 'Logo design'
         }, {
             id: 'GJdRFIoA',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508117985/kFV0iEjk/NTdf9NiSUz7obL2a.png',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508117985/kFV0iEjk/NTdf9NiSUz7obL2a.png',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: 'Colour palette and font styles'
         }]
     }, {
         project: {
@@ -238,57 +238,57 @@ const state = {
             id: 'NwMHjq0f',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508119604/UDBckqPN/bRgq4FWZt0YIp1I4.jpg',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508119604/UDBckqPN/bRgq4FWZt0YIp1I4.jpg',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: 'Brightspark Platform'
         }, {
             id: 'IcthACEu',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508119543/UDBckqPN/HVTF4GGUitA46iep.png',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508119543/UDBckqPN/HVTF4GGUitA46iep.png',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: 'Designs for opportunities, portfolio, documents, and investment details pages.'
         }, {
             id: 'jDUlFGcJ',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508119546/UDBckqPN/uBp1atEFFBrwwmxl.png',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508119546/UDBckqPN/uBp1atEFFBrwwmxl.png',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: 'Alternative design for opportunities page.'
         }, {
             id: 'iIfY5ngm',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508119547/UDBckqPN/IKIo1Lr49duJ2Q3S.png',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508119547/UDBckqPN/IKIo1Lr49duJ2Q3S.png',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: 'Alternative design for portfolio / my-investments page.'
         }, {
             id: 'INo92ioy',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508119549/UDBckqPN/tAyAcL9Mbw6Ob03g.png',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508119549/UDBckqPN/tAyAcL9Mbw6Ob03g.png',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: 'Alternative design for investment details page.'
         }, {
             id: 'KdSyYbVh',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508119541/UDBckqPN/fpGRR7PxlNzn8Jsp.png',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508119541/UDBckqPN/fpGRR7PxlNzn8Jsp.png',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: 'Alternative design for investment details page 2.'
         }, {
             id: 'qebMujZl',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508119547/UDBckqPN/tiIcYfZ83x34FeXx.png',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508119547/UDBckqPN/tiIcYfZ83x34FeXx.png',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: 'Investment modal'
         }, {
             id: 'oMvoqY0L',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508119544/UDBckqPN/roawt7c1BoQnWDYe.png',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508119544/UDBckqPN/roawt7c1BoQnWDYe.png',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: 'Alternative design for documents page.'
         }, {
             id: 'ajRenI4k',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508119543/UDBckqPN/MjsXna4conaiZtru.png',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508119543/UDBckqPN/MjsXna4conaiZtru.png',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: 'Alternative design for setttings page.'
         }, {
             id: 'jiENfqDb',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508119544/UDBckqPN/FkeyDbRgyjjPsVfQ.png',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508119544/UDBckqPN/FkeyDbRgyjjPsVfQ.png',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: 'Alternative design for notification panel.'
         }, {
             id: 'FTQfhzi8',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508119546/UDBckqPN/LBdREreA2lGhhjMP.jpg',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508119546/UDBckqPN/LBdREreA2lGhhjMP.jpg',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: 'Design prototype for sign in and onboarding.'
         }]
     }, {
         project: {
@@ -304,37 +304,37 @@ const state = {
             id: 'OlQbQcTk',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508120188/zBjp8YII/bqXzkapglYnRoeZq.jpg',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508120188/zBjp8YII/bqXzkapglYnRoeZq.jpg',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: 'Control Hub dashboard'
         }, {
             id: 'oV84lFd7',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508120182/zBjp8YII/TBmxior4XI98b4EG.jpg',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508120182/zBjp8YII/TBmxior4XI98b4EG.jpg',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: 'Clients list'
         }, {
             id: 'nFeaGY4V',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508120186/zBjp8YII/UAcYUzQ4MMNXVT8c.jpg',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508120186/zBjp8YII/UAcYUzQ4MMNXVT8c.jpg',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: 'Client overview'
         }, {
             id: 'bcClmE9W',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508120185/zBjp8YII/bieJG0RhmbiM7OuA.jpg',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508120185/zBjp8YII/bieJG0RhmbiM7OuA.jpg',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: 'Notification panel'
         }, {
             id: 'qm6cupSs',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508120183/zBjp8YII/t5ZEEzVNZwxPoMhE.jpg',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508120183/zBjp8YII/t5ZEEzVNZwxPoMhE.jpg',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: 'Alternative design for clients list page.'
         }, {
             id: 'I3nCvkCS',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508120188/zBjp8YII/IucfEIaI4zMHpTEz.jpg',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508120188/zBjp8YII/IucfEIaI4zMHpTEz.jpg',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: 'Alternative design for clients overview page.'
         }, {
             id: 'YEWxUt8s',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508120181/zBjp8YII/aN5EAHZX3nJPFI09.jpg',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508120181/zBjp8YII/aN5EAHZX3nJPFI09.jpg',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: 'Download modal'
         }]
     }, {
         project: {
@@ -350,22 +350,22 @@ const state = {
             id: 'XVYi2XNd',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508120930/hfEatIdV/mwFioGsHCpeRcMNE.png',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508120930/hfEatIdV/mwFioGsHCpeRcMNE.png',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: 'Chat App light theme showing discover page'
         }, {
             id: 'HGwopc5j',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508120929/hfEatIdV/HTkcUnAVTQJnXVnE.png',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508120929/hfEatIdV/HTkcUnAVTQJnXVnE.png',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: 'Chat App dark theme'
         }, {
             id: 'F96gLYkC',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508120927/hfEatIdV/bE7KsDclZ2YA2FMz.png',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508120927/hfEatIdV/bE7KsDclZ2YA2FMz.png',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: 'Chat App logo designs'
         }, {
             id: 'jWztS1V4',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508123370/hfEatIdV/pE1u7sOG0RgaK4rM.gif',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508123370/hfEatIdV/pE1u7sOG0RgaK4rM.jpg',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: 'Demo video showing initial implementation.'
         }]
     }, {
         project: {
@@ -381,27 +381,27 @@ const state = {
             id: 'JXbAiO9T',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508121521/cJ9QJmkB/cGInHHUGRCknRCP5.jpg',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508121521/cJ9QJmkB/cGInHHUGRCknRCP5.jpg',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: 'Menu items designed to show on restaurant TVs.'
         }, {
             id: 'rFv5re7H',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508121208/cJ9QJmkB/MdRSQMSxZVo62R2P.jpg',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508121208/cJ9QJmkB/MdRSQMSxZVo62R2P.jpg',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: 'University game design assignment 1'
         }, {
             id: 'ji6oXLMd',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508121208/cJ9QJmkB/OMRVW04ahxePEiiD.jpg',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508121208/cJ9QJmkB/OMRVW04ahxePEiiD.jpg',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: 'University game design assignment 2'
         }, {
             id: 'qw5VPugO',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508121206/cJ9QJmkB/kBiKTLYis1OmSGrJ.jpg',
             thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508121206/cJ9QJmkB/kBiKTLYis1OmSGrJ.jpg',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: 'University game design assignment 3'
         }, {
             id: 'tQA9ray8',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508121206/cJ9QJmkB/wHLVKpOi5sgAOJ1e.jpg',
             thumbnailUrl: 'urlhttp://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508121206/cJ9QJmkB/wHLVKpOi5sgAOJ1e.jpg____',
-            caption: 'Suspendisse pulvinar augue ac venenatis'
+            caption: 'Logo design'
         }]
     }]
 }
