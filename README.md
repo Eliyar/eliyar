@@ -1,21 +1,19 @@
-# eliyar.github.io
+# Portfolio Website
 
-> Eliyar's Portfolio Page
+Production: https://eliyar.ca
+Testing: https://eliyar.github.io
 
-## Build Setup
+# Technologies 
+* `Vue.js` front-end framework: https://vuejs.org/
+* Centralized state management with `vuex`: https://github.com/vuejs/vuex
 
-``` bash
-# install dependencies
-npm install
+* `Bootstrap-vue` layout and components: https://bootstrap-vue.js.org/
 
-# serve with hot reload at localhost:8080
-npm run dev
+* Hosting on `GitHub Pages`: https://eliyar.github.io
+* Front-end routing for GitHub Pages: https://github.com/rafrex/spa-github-pages
+* Production: https://eliyar.ca
 
-# build for production with minification
-npm run build
+* Image hosting on `Cloudinary` : https://cloudinary.com/
+* Client side email service with `EmailJS` that uses `SendGrid` API: http://www.emailjs.com/ and https://sendgrid.com/
 
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+* Realtime event tracking with `Firebase`: http://firebase.google.com
