@@ -284,7 +284,7 @@ const state = {
             id: 'ajRenI4k',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508119543/UDBckqPN/MjsXna4conaiZtru.png',
             thumbnailUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1508119543/UDBckqPN/MjsXna4conaiZtru.png',
-            caption: 'Alternative design for setttings page.'
+            caption: 'Alternative design for settings page.'
         }, {
             id: 'jiENfqDb',
             imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508119544/UDBckqPN/FkeyDbRgyjjPsVfQ.png',
