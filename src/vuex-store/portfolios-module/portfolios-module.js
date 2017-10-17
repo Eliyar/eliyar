@@ -302,7 +302,7 @@ const state = {
             name: 'Control Hub',
             url: null,
             logoUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508120617/zBjp8YII/W3y41vSKGzG68kZF.svg',
-            thumbnailUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/c_scale,w_500/v1508120188/zBjp8YII/bqXzkapglYnRoeZq.jpg',
+            thumbnailUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/c_scale,w_500/v1508120182/zBjp8YII/TBmxior4XI98b4EG.jpg',
             designThumbnailUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/c_scale,w_500/v1508120182/zBjp8YII/TBmxior4XI98b4EG.jpg',
             showProject: false,
             showDesigns: true
