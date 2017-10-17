@@ -125,7 +125,7 @@
 			onModalHide() {
 				this.modalShown = false;
 				this.$router.push({
-					name: 'Designs'
+					name: 'Projects'
 				})
 	
 				const body = document.getElementsByTagName("BODY")[0];

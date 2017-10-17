@@ -233,7 +233,7 @@ const state = {
         project: {
             id: 'UDBckqPN',
             name: 'Brightspark Platform',
-            url: 'https://spark.brightspark.com',
+            url: 'http://spark.brightspark.com',
             logoUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1508119416/kFV0iEjk/eo5oJcEfpz1BnaOO.svg',
             thumbnailUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/c_scale,w_500/v1508119604/UDBckqPN/bRgq4FWZt0YIp1I4.jpg',
             designThumbnailUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/c_scale,w_500/v1508119546/UDBckqPN/LBdREreA2lGhhjMP.jpg',

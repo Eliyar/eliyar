@@ -2,7 +2,6 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
 import Projects from '@/components/Projects'
-import Designs from '@/components/Designs'
 import SliderModal from '@/components/SliderModal'
 import Contact from '@/components/Contact'
 import NotFound from '@/components/NotFound'
@@ -20,11 +19,7 @@ export default new Router({
         name: 'Projects',
         component: Projects
     }, {
-        path: '/designs',
-        name: 'Designs',
-        component: Designs
-    }, {
-        path: '/designs/:projectID/attachment/:assetID',
+        path: '/projects/:projectID/attachment/:assetID',
         name: 'SliderModal',
         component: SliderModal
     }, {

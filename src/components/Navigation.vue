@@ -6,9 +6,6 @@
 		<b-dropdown-item>
 			<router-link :to="{ name: 'Projects' }" active-class="active" exact tag="span">Projects</router-link>
 		</b-dropdown-item>
-		<b-dropdown-item>
-			<router-link :to="{ name: 'Designs' }" active-class="active" exact tag="span">Designs</router-link>
-		</b-dropdown-item>
 		<b-dropdown-divider></b-dropdown-divider>
 		<b-dropdown-item href="https://github.com/eliyar" target="_blank" @click="updatePageClicks('github')"><span>GitHub</span></b-dropdown-item>
 		<b-dropdown-item href="https://linkedin.com/in/eliyar-m" target="_blank" @click="updatePageClicks('linkedin')"><span>LinkedIn</span></b-dropdown-item>

@@ -8,9 +8,6 @@
 					<li>
 						<router-link :to="{ name: 'Projects' }" tag="span">Projects</router-link>
 					</li>
-					<li>
-						<router-link :to="{ name: 'Designs' }" tag="span">Designs</router-link>
-					</li>
 					<li><a href="https://github.com/eliyar" target="_blank" @click="updatePageClicks('github')">GitHub</a></li>
 					<li><a href="https://linkedin.com/in/eliyar-m" target="_blank" @click="updatePageClicks('linkedin')">LinkedIn</a></li>
 					<li>
