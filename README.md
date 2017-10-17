@@ -1,7 +1,7 @@
 # Portfolio Website
 
-Production: https://eliyar.ca
-Testing: https://eliyar.github.io
+* Production: https://eliyar.ca
+* Testing: https://eliyar.github.io
 
 # Technologies 
 * `Vue.js` front-end framework: https://vuejs.org/
