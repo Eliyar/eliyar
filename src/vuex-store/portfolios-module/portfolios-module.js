@@ -377,6 +377,43 @@ const state = {
         }]
     }, {
         project: {
+            id: 'bIde4ZKL',
+            name: 'Sproutify',
+            url: 'http://sproutify.ca',
+            logoUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1510430136/bIde4ZKL/JetRTlpK2Z1UzwNb.svg',
+            thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/c_scale,w_500/v1510430138/bIde4ZKL/ABsKsDrl31YA2FMz.png',
+            designThumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/c_scale,w_500/v1510430138/bIde4ZKL/ABsKsDrl31YA2FMz.png',
+            showProject: true,
+            showDesigns: true
+        },
+        assets: [{
+            id: 'ZftbTcZs',
+            imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1510430138/bIde4ZKL/ABsKsDrl31YA2FMz.png',
+            thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1510430138/bIde4ZKL/ABsKsDrl31YA2FMz.png',
+            caption: 'Welcome back, sign in to continue.'
+        }, {
+            id: 'gL84eFd7',
+            imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1510430137/bIde4ZKL/ztXzgapglYnRoevW.png',
+            thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1510430137/bIde4ZKL/ztXzgapglYnRoevW.png',
+            caption: 'Welcome to Sproutify!'
+        }, {
+            id: 'bEblGY6V',
+            imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1510430138/bIde4ZKL/MYdf9NiS4zcogL12.png',
+            thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1510430138/bIde4ZKL/MYdf9NiS4zcogL12.png',
+            caption: 'Enter code to join an existing restaurant.'
+        }, {
+            id: 'alBlmE0Z',
+            imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1510430138/bIde4ZKL/vtnJG0RhmbiM7OuE.png',
+            thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1510430138/bIde4ZKL/vtnJG0RhmbiM7OuE.png',
+            caption: 'Forgot password'
+        }, {
+            id: 'ybopubSe',
+            imageUrl: 'https://res.cloudinary.com/dspnhpwnp/image/upload/v1510430138/bIde4ZKL/b14BSsbipBLqaMk1.png',
+            thumbnailUrl: 'http://res.cloudinary.com/dspnhpwnp/image/upload/t_media_lib_thumb/v1510430138/bIde4ZKL/b14BSsbipBLqaMk1.png',
+            caption: 'Change password'
+        }]
+    }, {
+        project: {
             id: 'cJ9QJmkB',
             name: 'Miscellaneous',
             url: null,
